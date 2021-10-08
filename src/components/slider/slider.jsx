@@ -17,7 +17,7 @@ const Slider = () => {
       speed={2100}
       parallax={true}
       pagination={{
-        dynamicBullets: true,
+        pagination: true,
         clickable: true,
       }}
       autoplay={{
