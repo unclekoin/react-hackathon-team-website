@@ -1,11 +1,11 @@
 import React from 'react';
 import members from '../db/api.members';
-import Badge from '../components/badge';
-import Breadcrumbs from '../components/breadcrumbs';
-import Button from '../components/button';
-import Card from '../components/card';
-import MemberCard from '../components/member-card';
-import Progress from '../components/progress';
+import Badge from '../components/badge/badge';
+import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
+import Button from '../components/button/button';
+import Card from '../components/card/card';
+import MemberCard from '../components/member-card/member-card';
+import Progress from '../components/progress/progress';
 import Slider from '../components/slider/slider';
 
 const Home = () => {
