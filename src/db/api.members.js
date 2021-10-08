@@ -25,7 +25,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'quick eye', color: 'danger' },
     bookmark: false
   },
   {
@@ -54,7 +54,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'sad sorcerer', color: 'secondary' },
     bookmark: false
   },
   {
@@ -83,7 +83,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'quick eye', color: 'danger' },
     bookmark: false
   },
   {
@@ -112,7 +112,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'agile badger', color: 'success' },
     bookmark: false
   },
   {
@@ -141,7 +141,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'egolege', color: 'info' },
     bookmark: false
   },
   {
@@ -170,7 +170,7 @@ const members = [
       instagram: 'https://www.instagram.com/',
     },
     role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
-    badge: { name: 'Quick Eye', color: 'danger' },
+    badge: { name: 'moderate pedant', color: 'primary' },
     bookmark: false
   },
 ];

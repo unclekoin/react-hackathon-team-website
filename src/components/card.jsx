@@ -1,18 +1,15 @@
 import React from 'react';
+import avatar from '../assets/images/avatar.jpeg';
 
-const Card = () => {
+const Card = ({ firstName, lastName, about, badge }) => {
   return (
     <div className="col">
       <div className="card shadow-sm">
-      <img src="http://placehold.it/400x300" className="card-img-top" alt="" />
+      <img src={avatar} className="card-img-top" alt="" />
         <div className="card-body">
-          <h5>Pavel Koryakin</h5>
-          <p className="card-text">55 years old</p>
-          <p className="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id
-            totam rem facere nam, voluptate excepturi eaque perferendis vel
-            necessitatibus.
-          </p>
+          <h5>{firstName} {lastName}</h5>
+          <p className="card-text">18 years old</p>
+          <p className="card-text">{about}</p>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               <button

@@ -39,7 +39,7 @@ const Navbar = () => {
 									</a>
 								</li>
 								<li>
-									<a mailto='mail@mail.com' className='text-white'>
+									<a href='mail@mail.com' className='text-white'>
 										Email me
 									</a>
 								</li>

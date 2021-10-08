@@ -1,4 +1,5 @@
 import React from 'react';
+import members from '../db/api.members';
 import Badge from '../components/badge';
 import Breadcrumbs from '../components/breadcrumbs';
 import Button from '../components/button';
@@ -10,23 +11,19 @@ import Slider from '../components/slider/slider';
 const Home = () => {
   return (
     <>
-              <Slider />
+      <Slider />
       <main>
-
         <section className="py-5 text-center container">
           <div className="col-lg-6 col-md-8 mx-auto">
             <h1 className="fw-light">Our Team</h1>
           </div>
         </section>
+
+
         <div className="album py-5 bg-light">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {members.map((member) => <Card key={member._id} {...member} />)}
             </div>
           </div>
         </div>
@@ -65,7 +62,9 @@ const Home = () => {
                 Add a link to our app to your browser bookmarks and don't forget
                 to send it to your friends, we think they will be pleased.
               </p>
-              <p className="lead">Always your team of react developers.</p>
+              <p className="fs-5 w-bold fst-italic text-end">
+                Always your team of react developers.
+              </p>
             </div>
           </div>
         </section>
@@ -74,7 +73,6 @@ const Home = () => {
       <Breadcrumbs />
       <Button />
       <MemberCard />
-
       <Progress />
     </>
   );
