@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
-	console.log(logo)
 	const [collapse, setCollapse] = useState(true)
 
 	const toggleCollapse = () => {
