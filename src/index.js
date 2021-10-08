@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './index.css';
-import App from './app';
+import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
