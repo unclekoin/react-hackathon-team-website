@@ -6,7 +6,7 @@ import 'swiper/swiper.min.css'
 import './slider.css'
 import members from '../../db/api.members'
 
-import img1 from '../../assets/images/slider-bg-1.jpg'
+import img1 from '../../assets/images/slider-bg-9.jpg'
 
 SwiperCore.use([Autoplay, Pagination, Navigation, Parallax])
 
