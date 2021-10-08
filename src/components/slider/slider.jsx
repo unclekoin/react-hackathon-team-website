@@ -6,8 +6,7 @@ import 'swiper/swiper.min.css'
 import './slider.css'
 import members from '../../db/api.members'
 
-import img1 from './frontend-banner.jpg'
-import img2 from '../../assets/images/avatar.jpeg'
+import img1 from '../../assets/images/slider-bg-1.jpg'
 
 SwiperCore.use([Autoplay, Pagination, Navigation, Parallax])
 
@@ -15,17 +14,18 @@ const Slider = () => {
   return (
     <Swiper
       className='slider-main-page'
-      speed={1600}
+      speed={2100}
       parallax={true}
       pagination={{
         dynamicBullets: true,
         clickable: true,
       }}
       autoplay={{
-        delay: 3500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
-      navigation={true}
+      loop={true}
+      navigation={false}
       module={[Navigation, Pagination, Autoplay]}
       spaceBetween={0}
       slidesPerView={1}
@@ -43,12 +43,12 @@ const Slider = () => {
         <SwiperSlide key={member._id} className='swiper-slider-container'>
           <img alt='' src={member.photo} className='img-swiper' />
           <div className='swiper-block-parallax'>
-            <div className='swiper-parallax-title' data-swiper-parallax='-3200'>
+            <div className='swiper-parallax-title' data-swiper-parallax='-800'>
               {`${member.firstName} ${member.lastName}`}
             </div>
             <div
               className='swiper-parallax-subtitle'
-              data-swiper-parallax='-2800'
+              data-swiper-parallax='-3500'
             >
               {`${member.about}`}
             </div>
