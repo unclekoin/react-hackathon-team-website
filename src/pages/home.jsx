@@ -5,7 +5,7 @@ import Button from '../components/button';
 import Card from '../components/card';
 import MemberCard from '../components/member-card';
 import Progress from '../components/progress';
-import Slider from '../components/slider';
+import Slider from '../components/slider/slider';
 
 const Home = () => {
   return (
