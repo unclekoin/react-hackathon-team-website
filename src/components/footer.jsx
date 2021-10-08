@@ -33,16 +33,6 @@ const Footer = () => {
                   Stuff for developers
                 </a>
               </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Another one
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Last time
-                </a>
-              </li>
             </ul>
           </div>
           <div className="col-6 col-md">

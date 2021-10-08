@@ -41,7 +41,7 @@ const Slider = () => {
 
       {members.map((member) => (
         <SwiperSlide key={member._id} className='swiper-slider-container'>
-          <img alt='' src={img2} className='img-swiper' />
+          <img alt='' src={member.photo} className='img-swiper' />
           <div className='swiper-block-parallax'>
             <div className='swiper-parallax-title' data-swiper-parallax='-3200'>
               {`${member.firstName} ${member.lastName}`}

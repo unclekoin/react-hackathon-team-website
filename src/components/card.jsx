@@ -1,11 +1,13 @@
 import React from 'react';
-import avatar from '../assets/images/avatar.jpeg';
 
-const Card = ({ firstName, lastName, about, badge }) => {
+
+
+
+const Card = ({ firstName, lastName, photo, about }) => {
   return (
     <div className="col">
       <div className="card shadow-sm">
-      <img src={avatar} className="card-img-top" alt="" />
+        <img src={photo} className="card-img-top" alt="" />
         <div className="card-body">
           <h5>{firstName} {lastName}</h5>
           <p className="card-text">18 years old</p>

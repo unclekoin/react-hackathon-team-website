@@ -1,10 +1,12 @@
+import avatar from '../assets/images/avatar.jpeg';
+
 const members = [
   {
     _id: '67rdca3eeb7f6fgeed471818',
     firstName: 'Pavel',
     lastName: 'Koryakin',
     dateOfBirth: '1966-01-08',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -33,7 +35,7 @@ const members = [
     firstName: 'Valeriy',
     lastName: 'Harlamov',
     dateOfBirth: '1966-11-05',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -62,7 +64,7 @@ const members = [
     firstName: 'Liudmyla',
     lastName: 'Duvivier',
     dateOfBirth: '1974-07-19',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -91,7 +93,7 @@ const members = [
     firstName: 'Dmitry',
     lastName: 'Lavrov',
     dateOfBirth: '1965-11-23',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -120,7 +122,7 @@ const members = [
     firstName: 'Andrey',
     lastName: 'Rybnikov',
     dateOfBirth: '1966-02-18',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -149,7 +151,7 @@ const members = [
     firstName: 'Yuriy',
     lastName: 'Vedernikov',
     dateOfBirth: '1978-08-31',
-    photo: '/',
+    photo: avatar,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
