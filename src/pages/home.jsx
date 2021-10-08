@@ -23,7 +23,7 @@ const Home = () => {
         <div className="album py-5 bg-light p-3">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              {members.map((member) => <Card key={member._id} {...member} />)}
+              {members.map((member, index) => <Card key={member._id} {...member} />)}
             </div>
           </div>
         </div>
