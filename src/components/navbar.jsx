@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
+	console.log(logo)
 	const [collapse, setCollapse] = useState(true)
 
 	const toggleCollapse = () => {
@@ -29,17 +31,21 @@ const Navbar = () => {
 							<h4 className='text-white'>Contact</h4>
 							<ul className='list-unstyled'>
 								<li>
-									<Link to='#' className='text-white'>
+									<Link to='#' className='text-primary'>
 										Follow on Twitter
 									</Link>
 								</li>
 								<li>
-									<a href='facebook.com' target='_blank' className='text-white'>
+									<a
+										href='facebook.com'
+										target='_blank'
+										className='text-primary'
+									>
 										Like on Facebook
 									</a>
 								</li>
 								<li>
-									<a href='mail@mail.com' className='text-white'>
+									<a href='mail@mail.com' className='text-primary'>
 										Email me
 									</a>
 								</li>
@@ -50,18 +56,22 @@ const Navbar = () => {
 			</div>
 			<div className='navbar navbar-dark bg-dark shadow-sm'>
 				<div className='container'>
-					<Link to='/' className='navbar-brand d-flex align-items-center'>
+					<Link
+						to='/'
+						className='navbar-brand d-flex align-items-center text-primary'
+					>
+						<span className='me-2'>
+							<img
+								src='/static/media/logo.16972065.png'
+								style={{ width: 50, height: 50 }}
+								alt='logo'
+							/>
+						</span>
 						<strong>Home</strong>
 					</Link>
 					<Link
-						to='/members'
-						className='navbar-brand d-flex align-items-center'
-					>
-						<strong>Members</strong>
-					</Link>
-					<Link
 						to='/favourites'
-						className='navbar-brand d-flex align-items-center'
+						className='navbar-brand d-flex align-items-left text-primary me-auto ms-3'
 					>
 						<strong>Favourites</strong>
 					</Link>
