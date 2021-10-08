@@ -20,14 +20,14 @@ const Home = () => {
         </section>
 
 
-        <div className="album py-5 bg-light">
+        <div className="album py-5 bg-light p-3">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {members.map((member) => <Card key={member._id} {...member} />)}
             </div>
           </div>
         </div>
-        <section className="py-5 container">
+        <section className="py-5 container p-3">
           <div className="row py-lg-5">
             <div className="col-lg-10 col-md-10 mx-auto">
               <h1 className="fw-light text-center mb-4">About our project</h1>
