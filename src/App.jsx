@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
@@ -36,7 +36,6 @@ const App = () => {
       <Route path="/contacts" component={Contacts} />
       <Route path="/:memberId" component={Member} />
       <Route path="/404" component={PageNotFound} />
-      <Redirect to="/404" />
       <Footer />
     </>
   );
