@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
+import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Home from './pages/home';
@@ -9,26 +10,26 @@ import Favourites from './pages/favourites';
 import Member from './pages/member';
 
 function App() {
-  const [memberIds, setMemberIds] = useState([]);
 
-  const handleFavorite = (id) => {
-    let newMemberIds = [...memberIds];
-    newMemberIds = newMemberIds.includes(id)
-      ? newMemberIds.filter((memberId) => memberId !== id)
-      : [...newMemberIds, id];
+  const [state, setState] = useState(false)
 
-    setMemberIds(newMemberIds);
-    localStorage.setItem('usersId', JSON.stringify(memberIds))
+  const handleFavorite = (id) => { 
+    storage[id]
+      ? storage[id] = false
+      : storage[id] = true;
+    
+    localStorage.setItem('userIds', JSON.stringify(storage));
+    setState(!state);
   };
 
   return (
     <>
       <Navbar />
       <Route path="/" exact>
-        <Home onFavorite={handleFavorite} />
+        <Home onFavorite={handleFavorite}/>
       </Route>
       <Route path="/favourites">
-        <Favourites onFavorite={handleFavorite} memberIds={memberIds} />
+        <Favourites onFavorite={handleFavorite}/>
       </Route>
       <Route path="/about" component={About} />
       <Route path="/сontacts" component={Contacts} />
