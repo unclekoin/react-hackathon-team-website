@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="container col-xxl-8 px-4 py-5 mt-5">
-      <div className="row flex-lg-row-reverse align-items-center g-5 p-3 shadow">
-        <div className="col-12 col-lg-6 my-0 my-md-5">
+    <div className="container px-4 py-5 mt-5 col-xxl-8">
+      <div className="p-3 shadow row flex-lg-row-reverse align-items-center g-5">
+        <div className="my-0 col-12 col-lg-6 my-md-5">
           <img
             src={img}
-            className="d-block mx-auto img-fluid"
+            className="mx-auto d-block img-fluid"
             alt="Hurricane team"
             loading="lazy"
           />
         </div>
-        <div className="col-lg-6 my-md-5">
-          <h1 className="display-5 fw-bold lh-1 text-center mb-3">
+        <div className="block-info col-lg-6 my-md-5">
+          <h1 className="mb-3 text-center display-5 fw-bold lh-1">
             Hurricane team
           </h1>
           <p className="lead">
@@ -29,7 +29,7 @@ const About = () => {
           <p>We are accustomed to this since childhood. No problem.</p>
           <p>- You’re just in a bad mood today, right?</p>
           <p>- I'm NEVER in the mood.</p>
-          <div className="d-grid gap-2 d-md-flex justify-content-center">
+          <div className="gap-2 d-grid d-md-flex justify-content-center">
             <Link to={'/contacts'}>
               <Button
                 cls="btn btn-outline-secondary btn-lg px-4"
