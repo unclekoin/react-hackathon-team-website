@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import storage from '../../db/storage';
+import getAge from '../../utils/get-age';
 
-const Card = ({ _id, firstName, lastName, photo, about, onFavorite }) => {
+const Card = ({ _id, firstName, lastName, dateOfBirth, photo, about, onFavorite }) => {
   return (
     <div className="col">
       <div className="card shadow-sm">
@@ -10,16 +12,17 @@ const Card = ({ _id, firstName, lastName, photo, about, onFavorite }) => {
           <h5>
             {firstName} {lastName}
           </h5>
-          <p className="card-text">18 years old</p>
+          <p className="card-text">{getAge(dateOfBirth)}</p>
           <p className="card-text">{about}</p>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
-              <button
-                type="button"
+              <Link
+                to={`/${_id}`}
                 className="btn btn-sm btn-outline-secondary"
+                role="button"
               >
                 View
-              </button>
+              </Link>
               <button
                 type="button"
                 className={`btn btn-sm btn-outline-${storage[_id] ? 'danger' : 'secondary'}`}

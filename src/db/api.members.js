@@ -1,8 +1,8 @@
-import avatar from '../assets/images/avatar.jpeg';
 import pavel from '../assets/images/pavel.jpg'
 import valeriy from '../assets/images/valeriy.png'
 import luda from '../assets/images/luda.jpg'
 import dmitry from '../assets/images/dmitry.jpg';
+import andrey from '../assets/images/andrey.jpg';
 import yuriy from '../assets/images/yuriy.jpg';
 
 const members = [
@@ -132,7 +132,7 @@ const members = [
     firstName: 'Andrey',
     lastName: 'Rybnikov',
     dateOfBirth: '1966-02-18',
-    photo: avatar,
+    photo: andrey,
     about:
       'I like to set tasks and solve them.',
     technologies: {

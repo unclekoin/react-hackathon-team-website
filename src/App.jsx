@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Route} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
@@ -8,22 +8,19 @@ import About from './pages/about';
 import Contacts from './pages/contacts';
 import Favourites from './pages/favourites';
 import Member from './pages/member';
-import Breadcrumbs from './components/breadcrumbs/breadcrumbs'
+import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
 import Slider from './components/slider/slider';
 
 const App = () => {
-
-  const [state, setState] = useState(false)
+  const [state, setState] = useState(false);
 
   const handleFavorite = (id) => {
-    storage[id]
-      ? storage[id] = false
-      : storage[id] = true;
-    
+    storage[id] ? (storage[id] = false) : (storage[id] = true);
+
     localStorage.setItem('userIds', JSON.stringify(storage));
-    
+
     setState(!state);
-  }
+  };
 
   return (
     <>
@@ -42,8 +39,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
-
-
