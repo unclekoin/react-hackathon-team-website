@@ -8,6 +8,8 @@ import About from './pages/about';
 import Contacts from './pages/contacts';
 import Favourites from './pages/favourites';
 import Member from './pages/member';
+import Breadcrumbs from './components/breadcrumbs/breadcrumbs'
+
 
 function App() {
 
@@ -32,8 +34,9 @@ function App() {
         <Favourites onFavorite={handleFavorite}/>
       </Route>
       <Route path="/about" component={About} />
-      <Route path="/сontacts" component={Contacts} />
+      <Route path="/contacts" component={Contacts} />
       <Route path="/:memberId" component={Member} />
+      <Breadcrumbs />
       <Footer />
     </>
   );
