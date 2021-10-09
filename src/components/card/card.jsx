@@ -1,38 +1,65 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Button from '../button/btn';
+import Badge from '../badge/badge';
 import storage from '../../db/storage';
+import getAge from '../../utils/get-age';
 
-const Card = ({ _id, firstName, lastName, photo, about, onFavorite }) => {
+const Card = ({
+  _id,
+  firstName,
+  lastName,
+  dateOfBirth,
+  badge,
+  photo,
+  about,
+  onFavorite,
+}) => {
   return (
     <div className="col">
-      <div className="card shadow-sm">
+      <div className="shadow-sm card">
         <img src={photo} className="card-img-top" alt="" />
         <div className="card-body">
+          <div className="d-flex justify-content-end">
+            <Badge color={badge.color} textColor={badge.textColor}>
+              {badge.name}
+            </Badge>
+          </div>
           <h5>
             {firstName} {lastName}
           </h5>
-          <p className="card-text">18 years old</p>
-          <p className="card-text">{about}</p>
+          <p className="card-text">{getAge(dateOfBirth)}</p>
+          <span className="block-about card-text">{about}</span>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
-              <button
-                type="button"
-                className="btn btn-sm btn-outline-secondary"
-              >
-                View
-              </button>
-              <button
-                type="button"
-                className={`btn btn-sm btn-outline-${storage[_id] ? 'danger' : 'secondary'}`}
+              <Link to={`/${_id}`}>
+                <Button cls={'btn btn-sm btn-outline-secondary'}>View</Button>
+              </Link>
+              <Button
+                cls={`btn btn-sm btn-outline-${
+                  storage[_id] ? 'danger' : 'secondary'
+                }`}
                 onClick={() => onFavorite(_id)}
               >
                 {storage[_id] ? 'Delete' : 'Add'}
-              </button>
+              </Button>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  _id: PropTypes.string.isRequired,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  dateOfBirth: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  onFavorite: PropTypes.func.isRequired,
 };
 
 export default Card;

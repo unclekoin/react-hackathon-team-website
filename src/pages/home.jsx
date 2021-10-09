@@ -1,11 +1,9 @@
-import React from 'react';
-import members from '../db/api.members';
-import Badge from '../components/badge/badge';
-import Button from '../components/button/button';
-import Card from '../components/card/card';
-import MemberCard from '../components/member-card/member-card';
-import Progress from '../components/progress/progress';
-import Slider from '../components/slider/slider';
+import React from "react";
+import PropTypes from 'prop-types';
+import members from "../db/api.members";
+import Card from "../components/card/card";
+import Progress from "../components/progress/progress";
+import Slider from "../components/slider/slider";
 
 const Home = ({ onFavorite }) => {
   return (
@@ -21,11 +19,7 @@ const Home = ({ onFavorite }) => {
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {members.map((member) => (
-                <Card
-                  key={member._id}
-                  {...member}
-                  onFavorite={onFavorite}
-                />
+                <Card key={member._id} {...member} onFavorite={onFavorite} />
               ))}
             </div>
           </div>
@@ -72,12 +66,13 @@ const Home = ({ onFavorite }) => {
           </div>
         </section>
       </main>
-      <Badge />
-      <Button />
-      <MemberCard />
       <Progress />
     </>
   );
 };
+
+Home.propTypes = {
+  onFavorite: PropTypes.func.isRequired
+}
 
 export default Home;
