@@ -1,8 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FooterColumn from '../footer/FooterColumn'
 import { PropTypes } from 'prop-types'
 
 const NavBarTop = ({ collapse }) => {
+  const stylesColumn = {
+    styleContainer: 'py-4 col-sm-4 offset-md-1',
+    styleTitle: 'header-top-h5',
+    styleList: 'list-unstyled',
+    styleItem: '',
+    styleLink: '',
+  }
+
   return (
     <div
       className={(collapse ? 'collapse ' : '') + 'header-top'}
@@ -11,7 +20,7 @@ const NavBarTop = ({ collapse }) => {
       <div className='container'>
         <div className='row'>
           <div className='py-4 col-sm-8 col-md-7'>
-            <h4>About Us</h4>
+            <h5 className='header-top-h5'>About Us</h5>
             <p className='text-muted-header'>
               <q>
                 We are a small but dynamic developing team of front-end
@@ -19,26 +28,15 @@ const NavBarTop = ({ collapse }) => {
               </q>
             </p>
           </div>
-          <div className='py-4 col-sm-4 offset-md-1'>
-            <h4>Contact</h4>
-            <ul className='list-unstyled'>
-              <li>
-                <Link to='#' className=''>
-                  Follow on Twitter
-                </Link>
-              </li>
-              <li>
-                <a href='facebook.com' target='_blank' className=''>
-                  Like on Facebook
-                </a>
-              </li>
-              <li>
-                <a href='mail@mail.com' className=''>
-                  Email me
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <FooterColumn
+            title={'Contact'}
+            list={[
+              { title: 'Contacts', to: '/contacts' },
+              { title: 'Our team', to: '/about' },
+            ]}
+            stylesColumn={stylesColumn}
+          ></FooterColumn>
         </div>
       </div>
     </div>

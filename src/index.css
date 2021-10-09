@@ -1,6 +1,7 @@
 /* navbar */
-h4 {
-  color: #999;
+.header-top-h5 {
+  font-size: 24px;
+  color: #999 !important;
 }
 
 .header,

@@ -4,6 +4,14 @@ import FooterColumn from './FooterColumn'
 import Logo from '../../assets/svg/logo'
 
 const Footer = () => {
+   const stylesColumn = {
+     styleContainer: 'col-6 col-md',
+     styleTitle: '',
+     styleList: 'list-unstyled text-small',
+     styleItem: 'mb-1',
+     styleLink: 'link-secondary text-decoration-none',
+   }
+  
   return (
     <div className='p-3 footer'>
       <footer className='container pt-4 my-md-5 pt-md-5'>
@@ -20,18 +28,18 @@ const Footer = () => {
           </div>
           <FooterColumn
             title={'About Us'}
-            list={[
-              { title: 'Our team', to: '/about' },
-              { title: 'Team for your project', to: '/' },
-            ]}
+            list={[{ title: 'Our team', to: '/about' }]}
+            stylesColumn={stylesColumn}
           ></FooterColumn>
           <FooterColumn
             title={'Favorites'}
             list={[{ title: 'Favorites', to: '/favourites' }]}
+            stylesColumn={stylesColumn}
           ></FooterColumn>
           <FooterColumn
             title={'Contacts'}
             list={[{ title: 'Contacts', to: '/contacts' }]}
+            stylesColumn={stylesColumn}
           ></FooterColumn>
         </div>
       </footer>
