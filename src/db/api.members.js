@@ -36,7 +36,6 @@ const members = [
       componets: ['Favourites'],
     },
     badge: { name: 'quick eye', color: 'danger' },
-    favorite: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471819',
@@ -65,7 +64,6 @@ const members = [
     },
     role: { text: "Here's what I did on the project", componets: ['Navbar'] },
     badge: { name: 'sad sorcerer', color: 'secondary' },
-    favorite: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471820',
@@ -97,7 +95,6 @@ const members = [
       componets: ['Badge', 'Button'],
     },
     badge: { name: 'quick eye', color: 'danger' },
-    favorite: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471821',
@@ -129,7 +126,6 @@ const members = [
       componets: ['Progress', 'About Page'],
     },
     badge: { name: 'agile badger', color: 'success' },
-    favorite: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471822',
@@ -161,7 +157,6 @@ const members = [
       componets: ['Slider', 'Footer'],
     },
     badge: { name: 'egolege', color: 'info' },
-    favorite: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471823',
@@ -193,7 +188,6 @@ const members = [
       componets: ['Members Card', 'Breadcrumbs'],
     },
     badge: { name: 'moderate pedant', color: 'primary' },
-    favorite: false,
   },
 ];
 

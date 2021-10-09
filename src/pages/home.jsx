@@ -5,12 +5,10 @@ import Button from '../components/button/button';
 import Card from '../components/card/card';
 import MemberCard from '../components/member-card/member-card';
 import Progress from '../components/progress/progress';
-import Slider from '../components/slider/slider';
 
 const Home = ({ onFavorite }) => {
   return (
     <>
-      <Slider />
       <main>
         <section className="pt-5 pb-3 text-center container">
           <div className="col-lg-12 col-md-8 mx-auto">

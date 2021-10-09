@@ -9,6 +9,7 @@ import Contacts from './pages/contacts';
 import Favourites from './pages/favourites';
 import Member from './pages/member';
 import Breadcrumbs from './components/breadcrumbs/breadcrumbs'
+import Slider from './components/slider/slider';
 
 const App = () => {
 
@@ -27,6 +28,8 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <Slider />
+      <Breadcrumbs />
       <Route path="/" exact>
         <Home onFavorite={handleFavorite} />
       </Route>
@@ -36,7 +39,6 @@ const App = () => {
       <Route path="/about" component={About} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/:memberId" component={Member} />
-      <Breadcrumbs />
       <Footer />
     </>
   );
