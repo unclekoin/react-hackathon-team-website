@@ -13,12 +13,12 @@ const Home = () => {
     <>
       <Slider />
       <main>
-        <section className="py-5 text-center container">
-          <div className="col-lg-6 col-md-8 mx-auto">
+        
+        <section className="pt-5 pb-3 text-center container">
+          <div className="col-lg-12 col-md-8 mx-auto">
             <h1 className="fw-light">Our Team</h1>
           </div>
         </section>
-
 
         <div className="album py-5 bg-light p-3">
           <div className="container">
@@ -27,6 +27,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <section className="py-5 container p-3">
           <div className="row py-lg-5">
             <div className="col-lg-10 col-md-10 mx-auto">
