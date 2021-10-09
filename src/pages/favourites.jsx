@@ -5,7 +5,6 @@ import storage from '../db/storage';
 import members from '../db/api.members';
 
 const Favourites = ({ onFavorite }) => {
-  console.log(storage);
 
   const favourites = members.filter((member) => storage[member._id]);
 

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const Badge = ({ color, textColor, children }) => {
   return (
     <span
-      class={`badge rounded-pill bg-${color} ${
+      className={`badge rounded-pill bg-${color} ${
         !!textColor && 'text-dark'
-      } position-absolute top-0 start-100 translate-middle p-2`}
+      } py-2 px-3`}
     >
       {children}
     </span>
