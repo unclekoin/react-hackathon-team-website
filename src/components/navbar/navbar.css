@@ -1,0 +1,56 @@
+h4 {
+  color: #999;
+}
+
+.header {
+  background-color: #20232a;
+  /* background-color: #282c34; */
+  color: #ffffff;
+}
+
+.header-top {
+  /* background-color: #20232a; */
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.navbar .container a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .container a:hover {
+  text-decoration: none;
+  color: #999;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-unstyled li a:hover {
+  text-decoration: none;
+  color: #999;
+}
+
+.wrapper-menu {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.45rem !important;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  padding: 0.25rem 0.45rem !important;
+  box-shadow: none;
+}
+
+.text-muted-header {
+  font-size: 1.125rem;
+  color: white;
+  quotes: "\201c" "\201d";
+}
