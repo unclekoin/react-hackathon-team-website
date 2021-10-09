@@ -1,11 +1,11 @@
-import React from 'react';
-import members from '../db/api.members';
-import Badge from '../components/badge/badge';
-import Button from '../components/button/Button';
-import Card from '../components/card/card';
-import MemberCard from '../components/member-card/member-card';
-import Progress from '../components/progress/progress';
-import Slider from '../components/slider/slider';
+import React from "react";
+import members from "../db/api.members";
+import Badge from "../components/badge/badge";
+import Button from "../components/button/Button";
+import Card from "../components/card/card";
+import MemberCard from "../components/member-card/member-card";
+import Progress from "../components/progress/progress";
+import Slider from "../components/slider/slider";
 
 const Home = ({ onFavorite }) => {
   return (
@@ -69,7 +69,7 @@ const Home = ({ onFavorite }) => {
         </section>
       </main>
       <Badge />
-      <Breadcrumbs />
+      {/* <Breadcrumbs /> */}
       <Button
         type="secondary"
         text="Add"
