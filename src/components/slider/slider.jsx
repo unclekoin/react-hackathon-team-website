@@ -14,14 +14,14 @@ const Slider = () => {
   return (
     <Swiper
       className='slider-main-page'
-      speed={2100}
+      speed={2900}
       parallax={true}
       pagination={{
-        dynamicBullets: true,
+        pagination: true,
         clickable: true,
       }}
       autoplay={{
-        delay: 4000,
+        delay: 4100,
         disableOnInteraction: false,
       }}
       loop={true}
@@ -29,8 +29,6 @@ const Slider = () => {
       module={[Navigation, Pagination, Autoplay]}
       spaceBetween={0}
       slidesPerView={1}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
     >
       <div
         slot='container-start'
@@ -41,9 +39,14 @@ const Slider = () => {
 
       {members.map((member) => (
         <SwiperSlide key={member._id} className='swiper-slider-container'>
-          <img alt='' src={member.photo} className='img-swiper' />
+          <img
+            alt=''
+            src={member.photo}
+            className='img-swiper'
+            data-swiper-parallax='-800'
+          />
           <div className='swiper-block-parallax'>
-            <div className='swiper-parallax-title' data-swiper-parallax='-800'>
+            <div className='swiper-parallax-title' data-swiper-parallax='-1000'>
               {`${member.firstName} ${member.lastName}`}
             </div>
             <div
