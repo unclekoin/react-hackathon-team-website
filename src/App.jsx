@@ -10,23 +10,26 @@ import Favourites from './pages/favourites';
 import Member from './pages/member';
 import Breadcrumbs from './components/breadcrumbs/breadcrumbs'
 
-function App() {
+const App = () => {
 
-    const [state, setState] = useState(false)
+  const [state, setState] = useState(false)
 
-    const handleFavorite = (id) => {
-        storage[id]
-            ? storage[id] = false
-            : storage[id] = true;
+  const handleFavorite = (id) => {
+    storage[id]
+      ? storage[id] = false
+      : storage[id] = true;
+    
+    setState(!state);
+  }
 
   return (
     <>
       <Navbar />
       <Route path="/" exact>
-        <Home onFavorite={handleFavorite}/>
+        <Home onFavorite={handleFavorite} />
       </Route>
       <Route path="/favourites">
-        <Favourites onFavorite={handleFavorite}/>
+        <Favourites onFavorite={handleFavorite} />
       </Route>
       <Route path="/about" component={About} />
       <Route path="/contacts" component={Contacts} />
@@ -35,5 +38,8 @@ function App() {
       <Footer />
     </>
   );
+}
 
 export default App;
+
+
