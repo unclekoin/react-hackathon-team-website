@@ -26,9 +26,12 @@ const members = [
       telegram: 'https://t.me/pavel_koryakin',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Favourites'],
+    },
     badge: { name: 'quick eye', color: 'danger' },
-    bookmark: false
+    bookmark: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471819',
@@ -55,9 +58,9 @@ const members = [
       telegram: 'https://t.me/Valera5454',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: { text: "Here's what I did on the project", componets: ['Navbar'] },
     badge: { name: 'sad sorcerer', color: 'secondary' },
-    bookmark: false
+    bookmark: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471820',
@@ -84,9 +87,12 @@ const members = [
       telegram: 'https://t.me/ludmyladev',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Badge', 'Button'],
+    },
     badge: { name: 'quick eye', color: 'danger' },
-    bookmark: false
+    bookmark: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471821',
@@ -113,9 +119,12 @@ const members = [
       telegram: 'https://t.me/Dmi_Lavrov',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Progress', 'About Page'],
+    },
     badge: { name: 'agile badger', color: 'success' },
-    bookmark: false
+    bookmark: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471822',
@@ -142,9 +151,12 @@ const members = [
       telegram: 'https://t.me/Egolege',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Slider', 'Footer'],
+    },
     badge: { name: 'egolege', color: 'info' },
-    bookmark: false
+    bookmark: false,
   },
   {
     _id: '67rdca3eeb7f6fgeed471823',
@@ -171,9 +183,12 @@ const members = [
       telegram: 'https://t.me/yuriy_yupiter',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Members Card', 'Breadcrumbs'],
+    },
     badge: { name: 'moderate pedant', color: 'primary' },
-    bookmark: false
+    bookmark: false,
   },
 ];
 
