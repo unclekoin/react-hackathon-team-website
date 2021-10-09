@@ -10,22 +10,40 @@ const Breadcrumbs = () => {
         { to: "/about", label: "About" },
         { to: "/:memberId", label: "Member" }
     ];
+
+    const breadCrumbsData = (location) => {
+        if (location !== "/") {
+            return location.split("/").map((crumb) => "/" + crumb);
+        }
+        return [];
+    };
+    const locationArray = breadCrumbsData(location.pathname);
+    const resultData = [];
+    const totalLocation = (arrayPathString, dataPath) => {
+        dataPath.forEach((path) => {
+            arrayPathString.forEach((item) => {
+                if (item === path.to) {
+                    resultData.push(path);
+                }
+            });
+        });
+    };
+    totalLocation(locationArray, breadCrumbsItems);
+
     return (
         <div>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    {breadCrumbsItems
-                        // .filter((item) => item.to === location.pathname)
-                        .map(({ to, label }) => (
-                            <Link
-                                key={to}
-                                to={to}
-                                className="breadcrumb-item active"
-                                aria-current="page"
-                            >
-                                {label}
-                            </Link>
-                        ))}
+                    {resultData.map(({ to, label }) => (
+                        <Link
+                            key={to}
+                            to={to}
+                            className="breadcrumb-item active"
+                            aria-current="page"
+                        >
+                            {label}
+                        </Link>
+                    ))}
                 </ol>
             </nav>
         </div>
