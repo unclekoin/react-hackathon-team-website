@@ -6,14 +6,14 @@ import getAge from '../../utils/get-age';
 const Card = ({ _id, firstName, lastName, dateOfBirth, photo, about, onFavorite }) => {
   return (
     <div className="col">
-      <div className="card shadow-sm">
+      <div className="shadow-sm card">
         <img src={photo} className="card-img-top" alt="" />
         <div className="card-body">
           <h5>
             {firstName} {lastName}
           </h5>
           <p className="card-text">{getAge(dateOfBirth)}</p>
-          <p className="card-text">{about}</p>
+          <span className="block-about card-text">{about}</span>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               <Link
