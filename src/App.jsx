@@ -19,6 +19,8 @@ const App = () => {
       ? storage[id] = false
       : storage[id] = true;
     
+    localStorage.setItem('userIds', JSON.stringify(storage));
+    
     setState(!state);
   }
 
