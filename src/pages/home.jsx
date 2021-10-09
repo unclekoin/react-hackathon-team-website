@@ -1,9 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import members from "../db/api.members";
-import Badge from "../components/badge/badge";
-import Button from "../components/button/button";
 import Card from "../components/card/card";
-import MemberCard from "../components/member-card/member-card";
 import Progress from "../components/progress/progress";
 import Slider from "../components/slider/slider";
 
@@ -68,18 +66,13 @@ const Home = ({ onFavorite }) => {
           </div>
         </section>
       </main>
-      <Button
-        type="secondary"
-        text="Add"
-        size={10}
-        disabled={false}
-        icon={"imgUrl"}
-        shape="round"
-      />
-      <MemberCard />
       <Progress />
     </>
   );
 };
+
+Home.propTypes = {
+  onFavorite: PropTypes.func.isRequired
+}
 
 export default Home;

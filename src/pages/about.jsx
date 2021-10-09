@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../assets/images/about.jpg';
+import Button from '../components/button/btn';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -30,12 +31,11 @@ const About = () => {
           <p>- I'm NEVER in the mood.</p>
           <div className="d-grid gap-2 d-md-flex justify-content-center">
             <Link to={'/contacts'}>
-              <button
-                type="button"
-                className="btn btn-outline-secondary btn-lg px-4"
+              <Button
+                cls="btn btn-outline-secondary btn-lg px-4"
               >
                 Contact us
-              </button>
+              </Button>
             </Link>
           </div>
         </div>

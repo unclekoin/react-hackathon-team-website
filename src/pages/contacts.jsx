@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/button/btn';
 import img from '../assets/images/slider-bg-7.jpg';
 
 const Contacts = () => {
@@ -26,18 +27,16 @@ const Contacts = () => {
             extensive prebuilt components, and powerful JavaScript plugins.
           </p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button
-              type="button"
-              className="btn btn-primary btn-lg px-4 me-md-2"
+            <Button
+              cls="btn btn-primary btn-lg px-4 me-md-2"
             >
               Primary
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary btn-lg px-4"
+            </Button>
+            <Button
+              cls="btn btn-outline-secondary btn-lg px-4"
             >
               Default
-            </button>
+            </Button>
           </div>
         </div>
       </div>

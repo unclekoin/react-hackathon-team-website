@@ -1,11 +1,25 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Badge = () => {
+const Badge = ({ color, textColor, children }) => {
   return (
-    <div>
-      <h1>Badge</h1>
-    </div>
+    <span
+      class={`badge rounded-pill bg-${color} ${
+        !!textColor && 'text-dark'
+      } position-absolute top-0 start-100 translate-middle p-2`}
+    >
+      {children}
+    </span>
   );
+};
+
+Badge.defaultProps = {
+  textColor: false,
+};
+
+Badge.propTypes = {
+  color: PropTypes.string.isRequired,
+  textColor: PropTypes.bool,
 };
 
 export default Badge;
