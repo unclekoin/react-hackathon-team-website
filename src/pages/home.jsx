@@ -68,8 +68,6 @@ const Home = ({ onFavorite }) => {
           </div>
         </section>
       </main>
-      <Badge />
-      {/* <Breadcrumbs /> */}
       <Button
         type="secondary"
         text="Add"

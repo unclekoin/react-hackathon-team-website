@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
+import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
 import Footer from './components/footer/footer';
 import Home from './pages/home';
 import About from './pages/about';
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <Breadcrumbs />
       <Route path="/" exact>
         <Home onFavorite={handleFavorite} />
       </Route>
