@@ -15,7 +15,7 @@ const Breadcrumbs = () => {
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     {breadCrumbsItems
-                        .filter((item) => item.to === location.pathname)
+                        // .filter((item) => item.to === location.pathname)
                         .map(({ to, label }) => (
                             <Link
                                 key={to}

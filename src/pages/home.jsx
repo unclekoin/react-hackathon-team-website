@@ -1,7 +1,6 @@
 import React from 'react';
 import members from '../db/api.members';
 import Badge from '../components/badge/badge';
-import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
 import Button from '../components/button/button';
 import Card from '../components/card/card';
 import MemberCard from '../components/member-card/member-card';
@@ -74,7 +73,6 @@ const Home = ({ onFavorite }) => {
         </section>
       </main>
       <Badge />
-      <Breadcrumbs />
       <Button />
       <MemberCard />
       <Progress />
