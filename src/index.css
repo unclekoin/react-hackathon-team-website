@@ -111,3 +111,23 @@
   display: flex;
   flex-direction: column;
 }
+
+/* breadcrumb */
+.breadcrumb-style {
+  color: #20232a;
+  font-size: 0.9rem;
+}
+
+a.breadcrumb-item {
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #20232a !important;
+  text-decoration: none;
+}
+
+.breadcrumb-item:hover {
+  /* color: white !important;
+  background-color: #20232a;
+  text-decoration: none; */
+}
