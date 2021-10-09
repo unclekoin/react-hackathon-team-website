@@ -1,4 +1,9 @@
-import avatar from '../assets/images/avatar.jpeg';
+import pavel from '../assets/images/pavel.jpg'
+import valeriy from '../assets/images/valeriy.png'
+import luda from '../assets/images/luda.jpg'
+import dmitry from '../assets/images/dmitry.jpg';
+import andrey from '../assets/images/andrey.jpg';
+import yuriy from '../assets/images/yuriy.jpg';
 
 const members = [
   {
@@ -6,7 +11,7 @@ const members = [
     firstName: 'Pavel',
     lastName: 'Koryakin',
     dateOfBirth: '1966-01-08',
-    photo: avatar,
+    photo: pavel,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -26,18 +31,20 @@ const members = [
       telegram: 'https://t.me/pavel_koryakin',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Favourites'],
+    },
     badge: { name: 'quick eye', color: 'danger' },
-    bookmark: false
   },
   {
     _id: '67rdca3eeb7f6fgeed471819',
     firstName: 'Valeriy',
     lastName: 'Harlamov',
     dateOfBirth: '1966-11-05',
-    photo: avatar,
+    photo: valeriy,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'Fullstack publishing specialist, beginner javascript programmer. Favorite entertainment — programming, mathematics, philosophy.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -55,18 +62,17 @@ const members = [
       telegram: 'https://t.me/Valera5454',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: { text: "Here's what I did on the project", componets: ['Navbar'] },
     badge: { name: 'sad sorcerer', color: 'secondary' },
-    bookmark: false
   },
   {
     _id: '67rdca3eeb7f6fgeed471820',
     firstName: 'Liudmyla',
     lastName: 'Duvivier',
     dateOfBirth: '1974-07-19',
-    photo: avatar,
+    photo: luda,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'Front end software developer.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -84,18 +90,20 @@ const members = [
       telegram: 'https://t.me/ludmyladev',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Badge', 'Button'],
+    },
     badge: { name: 'quick eye', color: 'danger' },
-    bookmark: false
   },
   {
     _id: '67rdca3eeb7f6fgeed471821',
     firstName: 'Dmitry',
     lastName: 'Lavrov',
     dateOfBirth: '1965-11-23',
-    photo: avatar,
+    photo: dmitry,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'At school, when I was little, they asked me who I wanted to become when I grew up. I said I wanted to be an archaeologist.To the question "why?", replied that I like to find something ancient, buried in the ground.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -113,18 +121,20 @@ const members = [
       telegram: 'https://t.me/Dmi_Lavrov',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Progress', 'About Page'],
+    },
     badge: { name: 'agile badger', color: 'success' },
-    bookmark: false
   },
   {
     _id: '67rdca3eeb7f6fgeed471822',
     firstName: 'Andrey',
     lastName: 'Rybnikov',
     dateOfBirth: '1966-02-18',
-    photo: avatar,
+    photo: andrey,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'I like to set tasks and solve them.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -142,18 +152,20 @@ const members = [
       telegram: 'https://t.me/Egolege',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Slider', 'Footer'],
+    },
     badge: { name: 'egolege', color: 'info' },
-    bookmark: false
   },
   {
     _id: '67rdca3eeb7f6fgeed471823',
     firstName: 'Yuriy',
     lastName: 'Vedernikov',
     dateOfBirth: '1978-08-31',
-    photo: avatar,
+    photo: yuriy,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'I like and learn to program in javascript.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -171,9 +183,11 @@ const members = [
       telegram: 'https://t.me/yuriy_yupiter',
       instagram: 'https://www.instagram.com/',
     },
-    role: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit',
+    role: {
+      text: "Here's what I did on the project",
+      componets: ['Members Card', 'Breadcrumbs'],
+    },
     badge: { name: 'moderate pedant', color: 'primary' },
-    bookmark: false
   },
 ];
 

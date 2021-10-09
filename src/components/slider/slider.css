@@ -1,16 +1,29 @@
+:root {
+  --swiper-theme-color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 .swiper-slider-container {
   height: 500px;
 }
 
 .swiper-block-parallax {
+  display: flex;
+  flex-direction: column;
+  width: 541px;
   position: absolute;
   bottom: 60px;
   top: 2rem;
   left: calc(200px + 8rem);
   right: 0;
-  display: flex;
-  flex-direction: column;
-  width: 541px;
   color: white;
 }
 
@@ -18,8 +31,8 @@
   position: absolute;
   top: 2rem;
   left: 4rem;
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   border: 1px solid transparent;
   border-radius: 50%;
   object-fit: cover;
@@ -36,6 +49,8 @@
 
 .swiper-parallax-subtitle {
   padding-top: 0.5rem;
+  color: #01d8ff;
+  opacity: 0.75;
   font-size: 20px;
   font-weight: 500;
   font-style: normal;

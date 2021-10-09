@@ -1,94 +1,42 @@
-import React from 'react';
-import logo from '../../assets/images/logo.png'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import FooterColumn from './FooterColumn'
+import Logo from '../../assets/svg/logo'
 
 const Footer = () => {
   return (
-    <div className="p-3 bg-light">
-      <footer className="container pt-4 my-md-5 pt-md-5">
-        <div className="row">
-          <div className="col-12 col-md d-flex flex-column align-items-center">
-            <img className="mb-2" src={logo} alt="logo" width="70" />
-            <small className="d-block mb-3 text-muted">&copy; 2021</small>
+    <div className='p-3 footer'>
+      <footer className='container pt-4 my-md-5 pt-md-5'>
+        <div className='row'>
+          <div className='order-last-md col-12 col-md d-flex flex-column'>
+            <Link to='/' className='footer-copyrigth'>
+              <Logo title={''} size={'60px'} />
+              <small className='mb-3 text-muted footer-small'>
+                <span>&copy; 2021</span>
+                <span>Copyright</span>
+                <span>Group 8 inc.</span>
+              </small>
+            </Link>
           </div>
-          <div className="col-6 col-md">
-            <h5>Features</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Cool stuff
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Random feature
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Team feature
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Stuff for developers
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md">
-            <h5>Resources</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Resource
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Resource name
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Another resource
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Final resource
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md">
-            <h5>About</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Team
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Locations
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Privacy
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Terms
-                </a>
-              </li>
-            </ul>
-          </div>
+          <FooterColumn
+            title={'About Us'}
+            list={[
+              { title: 'Our team', to: '/about' },
+              { title: 'Team for your project', to: '/' },
+            ]}
+          ></FooterColumn>
+          <FooterColumn
+            title={'Favorites'}
+            list={[{ title: 'Favorites', to: '/favourites' }]}
+          ></FooterColumn>
+          <FooterColumn
+            title={'Contacts'}
+            list={[{ title: 'Contacts', to: '/contacts' }]}
+          ></FooterColumn>
         </div>
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

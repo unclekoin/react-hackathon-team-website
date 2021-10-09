@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import PropTypes from 'prop-types'
 import classes from './progress.module.css'
 
 const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'circle'}) => {
@@ -27,8 +28,7 @@ const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'ci
       default:
         break
     }
-  }, [])
-
+  }, [color, type, value])
 
   return (
     <>
@@ -64,3 +64,10 @@ const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'ci
 }
 
 export default Progress
+
+Progress.propTypes = {
+  value: PropTypes.string,
+  title: PropTypes.string,
+  color: PropTypes.string,
+  type: PropTypes.string
+}

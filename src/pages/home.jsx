@@ -1,29 +1,27 @@
-import React from "react";
-import members from "../db/api.members";
-import Badge from "../components/badge/Badge";
-import Breadcrumbs from "../components/breadcrumbs/breadcrumbs";
-import Button from "../components/button/Button";
-import Card from "../components/card/card";
-import MemberCard from "../components/member-card/member-card";
-import Progress from "../components/progress/progress";
-import Slider from "../components/slider/slider";
+import React from 'react';
+import members from '../db/api.members';
+import Badge from '../components/badge/badge';
+import Button from '../components/button/Button';
+import Card from '../components/card/card';
+import MemberCard from '../components/member-card/member-card';
+import Progress from '../components/progress/progress';
+import Slider from '../components/slider/slider';
 
-const Home = () => {
+const Home = ({ onFavorite }) => {
   return (
     <>
       <Slider />
       <main>
-        <section className="py-5 text-center container">
-          <div className="col-lg-6 col-md-8 mx-auto">
+        <section className="pt-5 pb-3 text-center container">
+          <div className="col-lg-12 col-md-8 mx-auto">
             <h1 className="fw-light">Our Team</h1>
           </div>
         </section>
-
         <div className="album py-5 bg-light p-3">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              {members.map((member, index) => (
-                <Card key={member._id} {...member} />
+              {members.map((member) => (
+                <Card key={member._id} {...member} onFavorite={onFavorite} />
               ))}
             </div>
           </div>

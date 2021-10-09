@@ -46,7 +46,6 @@
   stroke-linecap: round;
   stroke-dasharray: 313;
   stroke-dashoffset: 0;
-  stroke: cadetblue;
   stroke-width: 20px;
-  transition: stroke-dashoffset 600ms ease-in-out
+  transition: stroke-dashoffset 600ms ease-out;
 }
