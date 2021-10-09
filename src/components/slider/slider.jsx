@@ -14,14 +14,14 @@ const Slider = () => {
   return (
     <Swiper
       className='slider-main-page'
-      speed={2100}
+      speed={2900}
       parallax={true}
       pagination={{
         pagination: true,
         clickable: true,
       }}
       autoplay={{
-        delay: 4000,
+        delay: 4100,
         disableOnInteraction: false,
       }}
       loop={true}
@@ -29,8 +29,6 @@ const Slider = () => {
       module={[Navigation, Pagination, Autoplay]}
       spaceBetween={0}
       slidesPerView={1}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
     >
       <div
         slot='container-start'
