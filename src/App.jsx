@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, useLocation } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
@@ -13,6 +13,7 @@ import PageNotFound from './pages/404';
 
 const App = () => {
   const [state, setState] = useState(false);
+  const location = useLocation();
 
   const handleFavorite = (id) => {
     storage[id] ? (storage[id] = false) : (storage[id] = true);
@@ -25,7 +26,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Breadcrumbs />
+        {location.pathname !== "/" ? <Breadcrumbs /> : null}
       <Route path="/" exact>
         <Home onFavorite={handleFavorite} />
       </Route>
