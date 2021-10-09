@@ -7,7 +7,7 @@ const PageNotFound = () => {
 			<img
 				style={{
 					display: 'block',
-					width: '80%',
+					width: '60%',
 					marginLeft: 'auto',
 					marginRight: 'auto',
 				}}
