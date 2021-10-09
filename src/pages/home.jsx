@@ -21,7 +21,7 @@ const Home = ({ onFavorite }) => {
         <div className="album py-5 bg-light p-3">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              {members.map((member, index) => (
+              {members.map((member) => (
                 <Card
                   key={member._id}
                   {...member}

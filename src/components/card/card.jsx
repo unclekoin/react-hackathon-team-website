@@ -1,4 +1,5 @@
 import React from 'react';
+import storage from '../../db/storage';
 
 const Card = ({ _id, firstName, lastName, photo, about, onFavorite }) => {
   return (
@@ -21,10 +22,10 @@ const Card = ({ _id, firstName, lastName, photo, about, onFavorite }) => {
               </button>
               <button
                 type="button"
-                className="btn btn-sm btn-outline-secondary"
+                className={`btn btn-sm btn-outline-${storage[_id] ? 'danger' : 'secondary'}`}
                 onClick={() => onFavorite(_id)}
               >
-                Favourites
+                {storage[_id] ? 'Delete' : 'Add'}
               </button>
             </div>
           </div>
