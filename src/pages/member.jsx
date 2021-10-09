@@ -1,11 +1,14 @@
 import React from 'react';
+import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
 
 const Member = () => {
-
   return (
-    <div>
+    <>
+      <Breadcrumbs />
+      <div>
         <h1>Member</h1>
-    </div>
+      </div>
+    </>
   );
 };
 

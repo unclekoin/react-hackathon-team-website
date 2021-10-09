@@ -5,10 +5,12 @@ import Button from '../components/button/button';
 import Card from '../components/card/card';
 import MemberCard from '../components/member-card/member-card';
 import Progress from '../components/progress/progress';
+import Slider from '../components/slider/slider';
 
 const Home = ({ onFavorite }) => {
   return (
     <>
+      <Slider />
       <main>
         <section className="pt-5 pb-3 text-center container">
           <div className="col-lg-12 col-md-8 mx-auto">
@@ -19,11 +21,7 @@ const Home = ({ onFavorite }) => {
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {members.map((member) => (
-                <Card
-                  key={member._id}
-                  {...member}
-                  onFavorite={onFavorite}
-                />
+                <Card key={member._id} {...member} onFavorite={onFavorite} />
               ))}
             </div>
           </div>

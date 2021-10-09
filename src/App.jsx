@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
@@ -8,8 +8,7 @@ import About from './pages/about';
 import Contacts from './pages/contacts';
 import Favourites from './pages/favourites';
 import Member from './pages/member';
-import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
-import Slider from './components/slider/slider';
+import PageNotFound from './pages/404';
 
 const App = () => {
   const [state, setState] = useState(false);
@@ -25,8 +24,6 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Slider />
-      <Breadcrumbs />
       <Route path="/" exact>
         <Home onFavorite={handleFavorite} />
       </Route>
@@ -36,6 +33,8 @@ const App = () => {
       <Route path="/about" component={About} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/:memberId" component={Member} />
+      <Route path="/404" component={PageNotFound} />
+      <Redirect to="/404" />
       <Footer />
     </>
   );

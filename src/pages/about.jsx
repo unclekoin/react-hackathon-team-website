@@ -1,9 +1,12 @@
 import React from 'react'
 import img from '../assets/images/about.jpg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
 
 const About = () => {
   return (
+  <>
+      <Breadcrumbs />
     <div className="container col-xxl-8 px-4 py-5 mt-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 p-3 shadow">
         <div className="col-12 col-lg-6 my-0 my-md-5">
@@ -27,7 +30,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

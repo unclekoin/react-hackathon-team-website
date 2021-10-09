@@ -1,8 +1,11 @@
 import React from 'react'
 import img from '../assets/images/slider-bg-7.jpg'
+import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
 
 const Contacts = () => {
   return (
+    <>
+    <Breadcrumbs />
     <div className="container col-xxl-8 px-4 py-5 mt-5">
       <div className="row flex-lg-row align-items-center g-5 py-5 shadow">
         <div className="col-10 col-sm-8 col-lg-6">
@@ -22,7 +25,8 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 
