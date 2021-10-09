@@ -1,86 +1,57 @@
-import React from 'react';
+import React from 'react'
 import logo from '../../assets/images/logo.png'
+import './footer.css'
 
 const Footer = () => {
   return (
-    <div className="p-3 bg-light">
-      <footer className="container pt-4 my-md-5 pt-md-5">
-        <div className="row">
-          <div className="col-12 col-md d-flex flex-column align-items-center">
-            <img className="mb-2" src={logo} alt="logo" width="70" />
-            <small className="d-block mb-3 text-muted">&copy; 2021</small>
+    <div className='p-3 footer'>
+      <footer className='container pt-4 my-md-5 pt-md-5'>
+        <div className='row'>
+          <div className='col-12 col-md d-flex flex-column align-items-center'>
+            <img className='mb-2' src={logo} alt='logo' width='70' />
+            <small className='mb-3 d-block text-muted'>&copy; 2021</small>
           </div>
-          <div className="col-6 col-md">
-            <h5>Features</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Cool stuff
+          <div className='col-6 col-md'>
+            <h5>About Us</h5>
+            <ul className='list-unstyled text-small'>
+              <li className='mb-1'>
+                <a className=' text-decoration-none' href='/'>
+                  Our team
                 </a>
               </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Random feature
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Team feature
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Stuff for developers
+              <li className='mb-1'>
+                <a className='link-secondary text-decoration-none' href='/'>
+                  Team for your project
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-6 col-md">
-            <h5>Resources</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Resource
+          <div className='col-6 col-md'>
+            <h5>Favorites</h5>
+            <ul className='list-unstyled text-small'>
+              <li className='mb-1'>
+                <a className='link-secondary text-decoration-none' href='/'>
+                  The best developers
                 </a>
               </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Resource name
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Another resource
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Final resource
+              <li className='mb-1'>
+                <a className='link-secondary text-decoration-none' href='/'>
+                  Your preferences
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-6 col-md">
-            <h5>About</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Team
+          <div className='col-6 col-md'>
+            <h5>Contacts</h5>
+            <ul className='list-unstyled text-small'>
+              <li className='mb-1'>
+                <a className='link-secondary text-decoration-none' href='/'>
+                  Contact Us
                 </a>
               </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Locations
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Privacy
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="/">
-                  Terms
+              <li className='mb-1'>
+                <a className='link-secondary text-decoration-none' href='/'>
+                  Clients Portal
                 </a>
               </li>
             </ul>
@@ -88,7 +59,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
