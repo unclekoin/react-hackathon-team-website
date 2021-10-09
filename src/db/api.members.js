@@ -1,4 +1,9 @@
 import avatar from '../assets/images/avatar.jpeg';
+import pavel from '../assets/images/pavel.jpg'
+import valeriy from '../assets/images/valeriy.png'
+import luda from '../assets/images/luda.jpg'
+import dmitry from '../assets/images/dmitry.jpg';
+import yuriy from '../assets/images/yuriy.jpg';
 
 const members = [
   {
@@ -6,7 +11,7 @@ const members = [
     firstName: 'Pavel',
     lastName: 'Koryakin',
     dateOfBirth: '1966-01-08',
-    photo: avatar,
+    photo: pavel,
     about:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
     technologies: {
@@ -38,9 +43,9 @@ const members = [
     firstName: 'Valeriy',
     lastName: 'Harlamov',
     dateOfBirth: '1966-11-05',
-    photo: avatar,
+    photo: valeriy,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'Fullstack publishing specialist, beginner javascript programmer. Favorite entertainment — programming, mathematics, philosophy.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -67,9 +72,9 @@ const members = [
     firstName: 'Liudmyla',
     lastName: 'Duvivier',
     dateOfBirth: '1974-07-19',
-    photo: avatar,
+    photo: luda,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'Front end software developer.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -99,9 +104,9 @@ const members = [
     firstName: 'Dmitry',
     lastName: 'Lavrov',
     dateOfBirth: '1965-11-23',
-    photo: avatar,
+    photo: dmitry,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'At school, when I was little, they asked me who I wanted to become when I grew up. I said I wanted to be an archaeologist.To the question "why?", replied that I like to find something ancient, buried in the ground.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -133,7 +138,7 @@ const members = [
     dateOfBirth: '1966-02-18',
     photo: avatar,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'I like to set tasks and solve them.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
@@ -163,9 +168,9 @@ const members = [
     firstName: 'Yuriy',
     lastName: 'Vedernikov',
     dateOfBirth: '1978-08-31',
-    photo: avatar,
+    photo: yuriy,
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.',
+      'I like and learn to program in javascript.',
     technologies: {
       html: { name: 'HTML', lavel: '80' },
       css: { name: 'CSS', lavel: '75' },
