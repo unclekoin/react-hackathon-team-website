@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Badge = () => {
   return (
@@ -6,6 +6,6 @@ const Badge = () => {
       <h1>Badge</h1>
     </div>
   );
-}
- 
+};
+
 export default Badge;

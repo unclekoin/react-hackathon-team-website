@@ -1,12 +1,12 @@
-import React from 'react';
-import members from '../db/api.members';
-import Badge from '../components/badge/badge';
-import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
-import Button from '../components/button/button';
-import Card from '../components/card/card';
-import MemberCard from '../components/member-card/member-card';
-import Progress from '../components/progress/progress';
-import Slider from '../components/slider/slider';
+import React from "react";
+import members from "../db/api.members";
+import Badge from "../components/badge/Badge";
+import Breadcrumbs from "../components/breadcrumbs/breadcrumbs";
+import Button from "../components/button/Button";
+import Card from "../components/card/card";
+import MemberCard from "../components/member-card/member-card";
+import Progress from "../components/progress/progress";
+import Slider from "../components/slider/slider";
 
 const Home = () => {
   return (
@@ -19,11 +19,12 @@ const Home = () => {
           </div>
         </section>
 
-
         <div className="album py-5 bg-light p-3">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              {members.map((member, index) => <Card key={member._id} {...member} />)}
+              {members.map((member, index) => (
+                <Card key={member._id} {...member} />
+              ))}
             </div>
           </div>
         </div>
@@ -71,7 +72,14 @@ const Home = () => {
       </main>
       <Badge />
       <Breadcrumbs />
-      <Button />
+      <Button
+        type="secondary"
+        text="Add"
+        size={10}
+        disabled={false}
+        icon={"imgUrl"}
+        shape="round"
+      />
       <MemberCard />
       <Progress />
     </>
