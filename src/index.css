@@ -131,3 +131,8 @@ a.breadcrumb-item {
   background-color: #20232a;
   text-decoration: none; */
 }
+
+/* member */
+.member-wrapper{
+  height: calc(100vh - 319px);
+}
