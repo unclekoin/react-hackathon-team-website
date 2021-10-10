@@ -1,6 +1,6 @@
-import React from 'react'
-import FooterColumn from '../footer/FooterColumn'
-import { PropTypes } from 'prop-types'
+import React from 'react';
+import FooterColumn from '../footer/FooterColumn';
+import { PropTypes } from 'prop-types';
 
 const NavBarTop = ({ collapse }) => {
   const stylesColumn = {
@@ -9,18 +9,18 @@ const NavBarTop = ({ collapse }) => {
     styleList: 'list-unstyled',
     styleItem: '',
     styleLink: '',
-  }
+  };
 
   return (
     <div
       className={(collapse ? 'collapse ' : '') + 'header-top'}
-      id='navbarHeader'
+      id="navbarHeader"
     >
-      <div className='container'>
-        <div className='row'>
-          <div className='py-4 col-sm-8 col-md-7'>
-            <h5 className='header-top-h5'>About Us</h5>
-            <p className='text-muted-header'>
+      <div className="container">
+        <div className="row">
+          <div className="py-4 col-sm-8 col-md-7">
+            <h5 className="header-top-h5">About Us</h5>
+            <p className="text-muted-header">
               <q>
                 We are a small but dynamic developing team of front-end
                 developers. Javascript, React, Node.js - this is about us!
@@ -39,11 +39,11 @@ const NavBarTop = ({ collapse }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 NavBarTop.propTypes = {
   collapse: PropTypes.bool.isRequired,
-}
+};
 
-export default NavBarTop
+export default NavBarTop;

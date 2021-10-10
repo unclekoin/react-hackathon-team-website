@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { PropTypes } from 'prop-types'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
 const FooterColumn = ({ children, title, list, stylesColumn }) => (
   <div className={stylesColumn.styleContainer}>
@@ -16,13 +16,13 @@ const FooterColumn = ({ children, title, list, stylesColumn }) => (
       ))}
     </ul>
   </div>
-)
+);
 
 FooterColumn.propTypes = {
   title: PropTypes.string.isRequired,
   list: PropTypes.array.isRequired,
   styles: PropTypes.string,
   stylesColumn: PropTypes.object.isRequired,
-}
+};
 
-export default FooterColumn
+export default FooterColumn;

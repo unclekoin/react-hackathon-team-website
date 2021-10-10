@@ -10,8 +10,11 @@ const Member = ({ onFavorite }) => {
 
   return (
     <div className="container member-wrapper">
-      {isMember ? <MemberCard memberId={memberId} onFavorite={onFavorite} /> : <Redirect to="/404" /> }
-          
+      {isMember ? (
+        <MemberCard memberId={memberId} onFavorite={onFavorite} />
+      ) : (
+        <Redirect to="/404" />
+      )}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import members from '../../db/api.members';
 import storage from '../../db/storage';
 import PropTypes from 'prop-types';
-import Button from '../button/btn';
+import Button from '../button/button';
 import Badge from '../badge/badge';
 import Progress from '../progress/progress';
 

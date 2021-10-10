@@ -1,25 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import FooterColumn from './FooterColumn'
-import Logo from '../../assets/svg/logo'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import FooterColumn from './FooterColumn';
+import Logo from '../../assets/svg/logo';
 
 const Footer = () => {
-   const stylesColumn = {
-     styleContainer: 'col-6 col-md',
-     styleTitle: '',
-     styleList: 'list-unstyled text-small',
-     styleItem: 'mb-1',
-     styleLink: 'link-secondary text-decoration-none',
-   }
-  
+  const stylesColumn = {
+    styleContainer: 'col-6 col-md',
+    styleTitle: '',
+    styleList: 'list-unstyled text-small',
+    styleItem: 'mb-1',
+    styleLink: 'link-secondary text-decoration-none',
+  };
+
   return (
-    <div className='p-3 footer'>
-      <footer className='container pt-4 my-md-5 pt-md-5'>
-        <div className='row'>
-          <div className='order-last-md col-12 col-md d-flex flex-column'>
-            <Link to='/' className='footer-copyrigth'>
+    <div className="p-3 footer">
+      <footer className="container pt-4 my-md-5 pt-md-5">
+        <div className="row">
+          <div className="order-last-md col-12 col-md d-flex flex-column">
+            <Link to="/" className="footer-copyrigth">
               <Logo title={''} size={'60px'} />
-              <small className='mb-3 text-muted footer-small'>
+              <small className="mb-3 text-muted footer-small">
                 <span>&copy; 2021</span>
                 <span>Copyright</span>
                 <span>Group 8 inc.</span>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

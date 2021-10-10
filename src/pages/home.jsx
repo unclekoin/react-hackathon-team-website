@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import members from "../db/api.members";
-import Card from "../components/card/card";
-import Slider from "../components/slider/slider";
+import members from '../db/api.members';
+import Card from '../components/card/card';
+import Slider from '../components/slider/slider';
 
 const Home = ({ onFavorite }) => {
   return (
@@ -70,7 +70,7 @@ const Home = ({ onFavorite }) => {
 };
 
 Home.propTypes = {
-  onFavorite: PropTypes.func.isRequired
-}
+  onFavorite: PropTypes.func.isRequired,
+};
 
 export default Home;

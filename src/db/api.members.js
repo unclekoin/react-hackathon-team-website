@@ -42,7 +42,13 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project:",
-      componets: ['Project structure', 'Routing', 'Favourites Page', 'Card', 'MemberCard'],
+      componets: [
+        'Project structure',
+        'Routing',
+        'Favourites Page',
+        'Card',
+        'MemberCard',
+      ],
     },
     badge: { name: 'quick eye', color: 'danger', textColor: false },
   },

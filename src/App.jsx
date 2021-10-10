@@ -26,7 +26,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      {(location.pathname !== '/' && location.pathname !== '/404') ? <Breadcrumbs /> : null}
+      {location.pathname !== '/' && location.pathname !== '/404' ? (
+        <Breadcrumbs />
+      ) : null}
       <Switch>
         <Route path="/" exact>
           <Home onFavorite={handleFavorite} />
@@ -37,7 +39,7 @@ const App = () => {
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/member/:memberId">
-          <Member onFavorite={handleFavorite}/>
+          <Member onFavorite={handleFavorite} />
         </Route>
         <Route path="/404" component={PageNotFound} />
         <Redirect to="/404" />

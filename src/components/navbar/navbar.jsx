@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
-import NavBarTop from './NavBarTop'
-import NavBarBottom from './NavBarBottom'
+import React, { useState } from 'react';
+import NavBarTop from './NavBarTop';
+import NavBarBottom from './NavBarBottom';
 
 const Navbar = () => {
-  const [collapse, setCollapse] = useState(true)
+  const [collapse, setCollapse] = useState(true);
 
   const toggleCollapse = () => {
-    setCollapse(!collapse)
-  }
+    setCollapse(!collapse);
+  };
 
   return (
-    <header className='header-wrapper'>
+    <header className="header-wrapper">
       <NavBarTop collapse={collapse}></NavBarTop>{' '}
       <NavBarBottom toggleCollapse={toggleCollapse}></NavBarBottom>{' '}
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

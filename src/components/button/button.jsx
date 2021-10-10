@@ -1,30 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-{
-  /* <Button
-type="secondary"
-text="Add"
-size={10}
-disabled={false}
-icon={"imgUrl"}
-shape="round"
-/>
-<MemberCard /> */
-}
+const Button = ({ cls, children, type, onClick }) => {
+  return (
+    <button className={cls} type={type} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
 
-const PrimaryButton = styled.button`
-  color: #fff;
-  background-color: cadetblue;
-  border-color: lightblue;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 20%;
-  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-`
+Button.defaultProps = {
+  type: 'button',
+};
 
-const Button = (props) => {
-  return <PrimaryButton>{props.text}</PrimaryButton>
-}
+Button.propTypes = {
+  cls: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  children: PropTypes.string.isRequired,
+};
 
-export default Button
+export default Button;
