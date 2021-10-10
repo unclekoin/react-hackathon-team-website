@@ -27,15 +27,12 @@ const members = [
     about:
       'I worked in sales for almost 30 years, but became interested in e-commerce and unexpectedly began to master JavaScript. This activity fascinated me to such an extent that I gave up everything and decided to become a good web developer.',
     technologies: {
-      html: { name: 'HTML', lavel: '80', color: colors.html },
-      css: { name: 'CSS', lavel: '75', color: colors.css },
-      bootstrap: { name: 'Bootstrap', lavel: '40', color: colors.bootstrap },
-      javascript: { name: 'JavaScript', lavel: '70', color: colors.javascript },
-      react: { name: 'React', lavel: '50', color: colors.react },
-      node: { name: 'Node.js', lavel: '20', color: colors.node },
-      php: { name: 'PHP', level: '15', color: colors.php },
+      html: { name: 'HTML', level: '80', color: colors.html },
+      css: { name: 'CSS', level: '75', color: colors.css },
+      javascript: { name: 'JavaScript', level: '70', color: colors.javascript },
+      react: { name: 'React', level: '50', color: colors.react },
       webpack: { name: 'Webpack', level: '30', color: colors.webpack },
-      git: { name: 'GIT', lavel: '60', color: colors.git },
+      git: { name: 'GIT', level: '60', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -45,7 +42,7 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project:",
-      componets: ['Project structure', 'Routing', 'Favourites Page', 'Card'],
+      componets: ['Project structure', 'Routing', 'Favourites Page', 'Card', 'MemberCard'],
     },
     badge: { name: 'quick eye', color: 'danger', textColor: false },
   },
@@ -58,12 +55,12 @@ const members = [
     about:
       'Fullstack publishing specialist, beginner javascript programmer. Favorite entertainment — programming, mathematics, philosophy.',
     technologies: {
-      html: { name: 'HTML', lavel: '90', color: colors.html },
-      css: { name: 'CSS', lavel: '60', color: colors.css },
-      bootstrap: { name: 'Bootstrap', lavel: '20', color: colors.bootstrap },
-      javascript: { name: 'JavaScript', lavel: '70', color: colors.javascript },
-      react: { name: 'React', lavel: '50', color: colors.react },
-      git: { name: 'GIT', lavel: '60', color: colors.git },
+      html: { name: 'HTML', level: '90', color: colors.html },
+      css: { name: 'CSS', level: '60', color: colors.css },
+      bootstrap: { name: 'Bootstrap', level: '20', color: colors.bootstrap },
+      javascript: { name: 'JavaScript', level: '70', color: colors.javascript },
+      react: { name: 'React', level: '50', color: colors.react },
+      git: { name: 'GIT', level: '60', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -86,13 +83,12 @@ const members = [
     about:
       'Front end software developer. Creative, communicative and able to quickly problem solve persone.',
     technologies: {
-      html: { name: 'HTML', lavel: '90', color: colors.html },
-      css: { name: 'CSS', lavel: '90', color: colors.css },
-      bootstrap: { name: 'Bootstrap', lavel: '90', color: colors.bootstrap },
-      javascript: { name: 'JavaScript', lavel: '90', color: colors.javascript },
-      react: { name: 'React', lavel: '90', color: colors.react },
+      html: { name: 'HTML', level: '90', color: colors.html },
+      css: { name: 'CSS', level: '90', color: colors.css },
+      javascript: { name: 'JavaScript', level: '90', color: colors.javascript },
+      react: { name: 'React', level: '90', color: colors.react },
       php: { name: 'PHP', level: '90', color: colors.php },
-      git: { name: 'GIT', lavel: '90', color: colors.git },
+      git: { name: 'GIT', level: '90', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -115,11 +111,11 @@ const members = [
     about:
       'At school, when I was little, they asked me who I wanted to become when I grew up. I said I wanted to be an archaeologist.To the question "why?", replied that I like to find something ancient, buried in the ground.',
     technologies: {
-      html: { name: 'HTML', lavel: '50', color: colors.html },
-      css: { name: 'CSS', lavel: '30', color: colors.css },
-      javascript: { name: 'JavaScript', lavel: '60', color: colors.javascript },
-      react: { name: 'React', lavel: '40', color: colors.react },
-      git: { name: 'GIT', lavel: '50', color: colors.git },
+      html: { name: 'HTML', level: '50', color: colors.html },
+      css: { name: 'CSS', level: '30', color: colors.css },
+      javascript: { name: 'JavaScript', level: '60', color: colors.javascript },
+      react: { name: 'React', level: '40', color: colors.react },
+      git: { name: 'GIT', level: '50', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -141,13 +137,12 @@ const members = [
     photo: andrey,
     about: 'I like to set tasks and solve them.',
     technologies: {
-      html: { name: 'HTML', lavel: '90', color: colors.html },
-      css: { name: 'CSS', lavel: '90', color: colors.css },
-      bootstrap: { name: 'Bootstrap', lavel: '40', color: colors.bootstrap },
-      javascript: { name: 'JavaScript', lavel: '60', color: colors.javascript },
-      react: { name: 'React', lavel: '40', color: colors.react },
+      html: { name: 'HTML', level: '90', color: colors.html },
+      css: { name: 'CSS', level: '90', color: colors.css },
+      javascript: { name: 'JavaScript', level: '60', color: colors.javascript },
+      react: { name: 'React', level: '40', color: colors.react },
       php: { name: 'PHP', level: '40', color: colors.php },
-      git: { name: 'GIT', lavel: '10', color: colors.git },
+      git: { name: 'GIT', level: '10', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -169,14 +164,12 @@ const members = [
     photo: yuriy,
     about: 'I like and learn to program in javascript.',
     technologies: {
-      html: { name: 'HTML', lavel: '40', color: colors.html },
-      css: { name: 'CSS', lavel: '30', color: colors.css },
-      bootstrap: { name: 'Bootstrap', lavel: '10', color: colors.bootstrap },
-      javascript: { name: 'JavaScript', lavel: '50', color: colors.javascript },
-      react: { name: 'React', lavel: '20', color: colors.react },
-      node: { name: 'Node.js', lavel: '5', color: colors.node },
+      html: { name: 'HTML', level: '40', color: colors.html },
+      css: { name: 'CSS', level: '30', color: colors.css },
+      javascript: { name: 'JavaScript', level: '50', color: colors.javascript },
+      react: { name: 'React', level: '20', color: colors.react },
       webpack: { name: 'Webpack', level: '10', color: colors.webpack },
-      git: { name: 'GIT', lavel: '10', color: colors.git },
+      git: { name: 'GIT', level: '10', color: colors.git },
     },
     socialLinks: {
       facebook: 'https://www.facebook.com/',
@@ -186,7 +179,7 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project:",
-      componets: ['Members Card', 'Breadcrumbs'],
+      componets: ['MemberCard', 'Breadcrumbs'],
     },
     badge: { name: 'moderate pedant', color: 'primary', textColor: false },
   },
