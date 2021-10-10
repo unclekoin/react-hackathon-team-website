@@ -1,5 +1,4 @@
 import React from 'react'
-import { useHistory } from 'react-router'
 import notFoundPict from '../assets/images/404_notfound.png'
 import MenuItem from '../components/navbar/MenuItem'
 
