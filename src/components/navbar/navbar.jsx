@@ -10,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <header>
+    <header className='header-wrapper'>
       <NavBarTop collapse={collapse}></NavBarTop>{' '}
       <NavBarBottom toggleCollapse={toggleCollapse}></NavBarBottom>{' '}
     </header>
