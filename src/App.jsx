@@ -42,6 +42,7 @@ const App = () => {
           <Member onFavorite={handleFavorite} />
         </Route>
         <Route path="/404" component={PageNotFound} />
+        <Redirect from="/react-hackathon-team-website/" to="/" />
         <Redirect to="/404" />
       </Switch>
       <Footer />
