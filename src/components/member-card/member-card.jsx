@@ -24,7 +24,7 @@ const MemberCard = ({ memberId, onFavorite }) => {
     <div className='card mb-3 shadow p-3 page-wrapper'>
       <div className='row g-0 p-3'>
         <div className='col-md-6'>
-          <picture class='member-item-img '>
+          <picture className='member-item-img '>
             <img
               src={photo}
               className='img-fluid rounded-start'
