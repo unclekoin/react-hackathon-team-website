@@ -33,7 +33,7 @@ const Card = ({
           <span className="block-about card-text">{about}</span>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
-              <Link to={`/${_id}`}>
+              <Link to={`/member/${_id}`}>
                 <Button cls={'btn btn-sm btn-outline-secondary'}>View</Button>
               </Link>
               <Button

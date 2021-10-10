@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, useLocation } from 'react-router-dom';
+import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
 import storage from './db/storage';
 import Navbar from './components/navbar/navbar';
 import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
@@ -26,17 +26,20 @@ const App = () => {
   return (
     <>
       <Navbar />
-        {location.pathname !== "/" ? <Breadcrumbs /> : null}
-      <Route path="/" exact>
-        <Home onFavorite={handleFavorite} />
-      </Route>
-      <Route path="/favourites">
-        <Favourites onFavorite={handleFavorite} />
-      </Route>
-      <Route path="/about" component={About} />
-      <Route path="/contacts" component={Contacts} />
-      <Route path="/:memberId" component={Member} />
-      <Route path="/404" component={PageNotFound} />
+      {location.pathname !== '/' ? <Breadcrumbs /> : null}
+      <Switch>
+        <Route path="/" exact>
+          <Home onFavorite={handleFavorite} />
+        </Route>
+        <Route path="/favourites">
+          <Favourites onFavorite={handleFavorite} />
+        </Route>
+        <Route path="/about" component={About} />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="/member/:memberId" component={Member} />
+        <Route path="/404" component={PageNotFound} />
+        <Redirect to="/404" />
+      </Switch>
       <Footer />
     </>
   );
