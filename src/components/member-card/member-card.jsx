@@ -56,7 +56,7 @@ const MemberCard = ({ memberId, onFavorite }) => {
                 <Progress
                   key={Object.keys(technologies).length - i}
                   title={technologies[key].name}
-                  value={technologies[key].lavel}
+                  value={technologies[key].level}
                   color={technologies[key].color}
                 />
               ))}
