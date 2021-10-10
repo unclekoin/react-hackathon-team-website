@@ -4,10 +4,10 @@ import classes from './progress.module.css'
 
 const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'circle'}) => {
   const [barStyle, setBarStyle] = useState({width: '0%'})
-  const [circleStyle, setCircleStyle] = useState({strokeDashoffset: 304})
+  const [circleStyle, setCircleStyle] = useState({strokeDashoffset: 273})
 
-  const length = 110  // don't forget to update strokeDashoffset
-  const innerLength = 84
+  const length = 100  // don't forget to update strokeDashoffset
+  const innerLength = 74
 
   useEffect(() => {
     switch (type) {

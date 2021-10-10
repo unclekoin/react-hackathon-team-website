@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-{/* <Button
+{
+  /* <Button
 type="secondary"
 text="Add"
 size={10}
@@ -9,7 +10,8 @@ disabled={false}
 icon={"imgUrl"}
 shape="round"
 />
-<MemberCard /> */}
+<MemberCard /> */
+}
 
 const PrimaryButton = styled.button`
   color: #fff;
@@ -19,10 +21,10 @@ const PrimaryButton = styled.button`
   border-radius: 20%;
   -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-`;
+`
 
 const Button = (props) => {
-  return <PrimaryButton>{props.text}</PrimaryButton>;
-};
+  return <PrimaryButton>{props.text}</PrimaryButton>
+}
 
-export default Button;
+export default Button

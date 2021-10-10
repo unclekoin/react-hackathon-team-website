@@ -23,7 +23,7 @@ const PageNotFound = () => {
 					alt='Page not found'
 				/>
 			</div>
-			<Button onClick={goHome} cls='btn btn-outline-primary'>
+			<Button onClick={goHome} cls='btn btn-outline-primary btn-lg'>
 				Back to Home
 			</Button>
 		</>
