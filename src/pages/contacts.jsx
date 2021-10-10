@@ -40,20 +40,29 @@ const media = [
 
 const Contacts = () => {
   return (
-    <div className="container col-xxl-8 px-4 py-5 mt-5">
-      <div className="row flex-lg-row g-5 p-3 shadow">
-        <div className="col-12 col-lg-6 my-0 my-lg-5">
-          <img src={img} className="img-fluid shadow" alt="Contacts" loading="lazy"/>
+    <div className='container col-xxl-8 px-4 py-5 mt-5 page-wrapper'>
+      <div className='row flex-lg-row g-5 p-3 shadow'>
+        <div className='col-12 col-lg-6 my-0 my-lg-5'>
+          <img
+            src={img}
+            className='img-fluid shadow'
+            alt='Contacts'
+            loading='lazy'
+          />
         </div>
-        <div className="d-flex flex-column justify-content-between col-lg-6 my-lg-5">
-          <h1 className="display-5 fw-bold lh-1 mb-3 text-center">Contacts</h1>
-          <p className="lead text-center">We are always open to communication</p>
-          <div className="d-flex flex-column my-3 flex-grow-1">
-            <div className="row row-cols-4  text-center my-auto justify-content-center">
-              {media.map(i => <Media key={i.title} item={i}/>)}
+        <div className='d-flex flex-column justify-content-between col-lg-6 my-lg-5'>
+          <h1 className='display-5 fw-bold lh-1 mb-3 text-center'>Contacts</h1>
+          <p className='lead text-center'>
+            We are always open to communication
+          </p>
+          <div className='d-flex flex-column my-3 flex-grow-1'>
+            <div className='row row-cols-4  text-center my-auto justify-content-center'>
+              {media.map((i) => (
+                <Media key={i.title} item={i} />
+              ))}
             </div>
           </div>
-          <p className="lead text-center fs-3">Let's do something together!</p>
+          <p className='lead text-center fs-3'>Let's do something together!</p>
         </div>
       </div>
     </div>
