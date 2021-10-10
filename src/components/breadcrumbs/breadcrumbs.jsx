@@ -38,23 +38,23 @@ const Breadcrumbs = () => {
 	totalLocation(locationArray, allBreadCrumbs);
 
 	return (
-		<div>
-			<nav aria-label="breadcrumb">
-				<ol className="breadcrumb">
-					{resultData.map(({ to, label }) => (
-						<Link
-							key={to}
-							to={to}
-							className="breadcrumb-item active"
-							aria-current="page"
-						>
-							{label}
-						</Link>
-					))}
-				</ol>
-			</nav>
-		</div>
-	);
+    <div className='container pt-3 pb-0 text-center breadcrumb-style'>
+      <nav aria-label='breadcrumb'>
+        <ol className='breadcrumb'>
+          {resultData.map(({ to, label }) => (
+            <Link
+              key={to}
+              to={to}
+              className='breadcrumb-item'
+              aria-current='page'
+            >
+              {label}
+            </Link>
+          ))}
+        </ol>
+      </nav>
+    </div>
+  )
 };
 
 export default Breadcrumbs;
