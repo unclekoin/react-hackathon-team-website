@@ -1,6 +1,7 @@
 :root {
   --length: 110px;
-  --inner-length: 70px;
+  --inner-length: 84px;
+  --line-width: 13px;
 }
 
 .wrapper {
@@ -51,6 +52,6 @@
   stroke-linecap: round;
   stroke-dasharray: 313;
   stroke-dashoffset: 0;
-  stroke-width: 20px;
+  stroke-width: var(--line-width);
   transition: stroke-dashoffset 600ms ease-out;
 }
