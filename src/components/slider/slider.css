@@ -1,5 +1,6 @@
 :root {
   --swiper-theme-color: white !important;
+  --chromeAddressBarHeight: 56px;
 }
 
 .swiper-pagination-bullet {
@@ -68,4 +69,96 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: left 0% bottom 78%;
+}
+
+/* Breakpoints */
+
+@media (min-width: 320px) {
+  .swiper-slider-container {
+    height: calc(100vh - 110px);
+  }
+
+  .img-swiper {
+    width: 140px;
+    height: 140px;
+    left: 2rem;
+  }
+
+  .swiper-block-parallax {
+    max-width: 260px;
+    bottom: 60px;
+    top: 12rem;
+    left: 2rem;
+    right: 0;
+  }
+
+  .swiper-parallax-title {
+    font-size: 32px;
+  }
+
+  .swiper-parallax-subtitle {
+    font-size: 16px;
+  }
+
+  .swiper-parallax-bg {
+    left: 0;
+    top: 0;
+    width: 112%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: left 52% bottom 78%;
+  }
+}
+
+@media (min-width: 560px) {
+  .swiper-slider-container {
+    height: calc(68vh);
+  }
+
+  .img-swiper {
+    width: 160px;
+    height: 160px;
+    left: 2rem;
+  }
+
+  .swiper-block-parallax {
+    min-width: 300px;
+    bottom: 60px;
+    top: 2rem;
+    left: calc(160px + 4rem);
+    right: 0;
+  }
+
+  .swiper-parallax-title {
+    font-size: 36px;
+  }
+
+  .swiper-parallax-subtitle {
+    font-size: 20px;
+  }
+
+  .swiper-parallax-bg {
+    left: 0;
+    top: 0;
+    width: 112%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: left 40% bottom 78%;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+
+}
+
+@media (min-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
 }

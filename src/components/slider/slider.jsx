@@ -20,10 +20,10 @@ const Slider = () => {
                 pagination: true,
                 clickable: true,
             }}
-            autoplay={{
-                delay: 4100,
-                disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //     delay: 4100,
+            //     disableOnInteraction: false,
+            // }}
             loop={true}
             navigation={false}
             module={[Navigation, Pagination, Autoplay]}
