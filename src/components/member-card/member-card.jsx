@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import members from '../../db/api.members';
-import storage from '../../db/storage';
-import PropTypes from 'prop-types';
-import Button from '../button/btn';
-import Badge from '../badge/badge';
-import Progress from '../progress/progress';
+import React, { useState } from 'react'
+import members from '../../db/api.members'
+import storage from '../../db/storage'
+import PropTypes from 'prop-types'
+import Button from '../button/btn'
+import Badge from '../badge/badge'
+import Progress from '../progress/progress'
 
 const MemberCard = ({ memberId, onFavorite }) => {
-  const [member] = useState(members.find((item) => item._id === memberId));
+  const [member] = useState(members.find((item) => item._id === memberId))
   const {
     _id,
     firstName,
@@ -18,40 +18,48 @@ const MemberCard = ({ memberId, onFavorite }) => {
     socialLinks,
     badge,
     technologies,
-  } = member;
+  } = member
 
   return (
-    <div className="card mb-3">
-      <div className="row g-0">
-        <div className="col-md-4">
-          <img src={photo} className="img-fluid rounded-start" alt="..." />
+    <div className='card mb-3 shadow p-3 page-wrapper'>
+      <div className='row g-0 p-3'>
+        <div className='col-md-6'>
+          <picture class='member-item-img '>
+            <img
+              src={photo}
+              className='img-fluid rounded-start'
+              alt='...'
+              loading='lazy'
+            />
+          </picture>
         </div>
-        <div className="col-md-8">
-          <Badge color={badge.color} textColor={badge.textColor}>
-            {badge.name}
-          </Badge>
-          <div className="card-body lead text-muted">
-            <h5 className="card-title">
+        <div className='col-md-6 ps-4'>
+          <div className='card-body lead text-muted'>
+            <Badge color={badge.color} textColor={badge.textColor}>
+              {badge.name}
+            </Badge>
+            <h3 className='card-title pt-4'>
               {firstName} {lastName}
-            </h5>
-            <p className="card-text">{about}</p>
+            </h3>
+            <p className='card-text'>{about}</p>
             {role.text}{' '}
-            <ul className="card-text">
+            <ul className='card-text'>
               {role.componets.map((component, index) => (
                 <li key={role.componets.length - index}>{component}</li>
               ))}
             </ul>
-            <div>
+            <div className='pb-4'>
               {Object.keys(socialLinks).map((key, i) => (
                 <a
                   key={Object.keys(socialLinks).length - i}
                   href={socialLinks[key]}
+                  className='pe-2'
                 >
                   <i className={`bi bi-${key}`}></i>
                 </a>
               ))}
             </div>
-            <div className="d-flex">
+            <div className='d-flex flex-wrap'>
               {Object.keys(technologies).map((key, i) => (
                 <Progress
                   key={Object.keys(technologies).length - i}
@@ -71,12 +79,12 @@ const MemberCard = ({ memberId, onFavorite }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 MemberCard.propTypes = {
   memberId: PropTypes.string.isRequired,
   onFavorite: PropTypes.func.isRequired,
-};
+}
 
-export default MemberCard;
+export default MemberCard

@@ -137,3 +137,22 @@ a.breadcrumb-item {
 .page-wrapper {
   min-height: calc(100vh - 364px);
 }
+
+/* member */
+.member-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.member-item-img img {
+    max-width: 100%;
+    max-height: 600px;
+    min-height: 600px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 0 1rem !important;
+}

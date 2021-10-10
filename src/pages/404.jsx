@@ -1,8 +1,14 @@
 import React from 'react'
 import notFoundPict from '../assets/images/404_notfound.png'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router'
+import Button from '../components/button/btn'
 
 const PageNotFound = () => {
+	const history = useHistory()
+
+	const goHome = () => {
+		history.replace('/')
+	}
 	return (
 		<>
 			<div className='page-wrapper'>
@@ -17,7 +23,9 @@ const PageNotFound = () => {
 					alt='Page not found'
 				/>
 			</div>
-			<Link to='/'>Back to Home</Link>
+			<Button onClick={goHome} cls='btn btn-outline-primary'>
+				Back to Home
+			</Button>
 		</>
 	)
 }
