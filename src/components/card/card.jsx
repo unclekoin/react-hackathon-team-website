@@ -21,7 +21,7 @@ const Card = ({
       <div className='shadow-sm card'>
         <img src={photo} className='card-img-top' alt='' />
         <div className='card-body'>
-          <div className='d-flex justify-content-end  pt-3'>
+          <div className='d-flex justify-content-end pt-3'>
             <Badge color={badge.color} textColor={badge.textColor}>
               {badge.name}
             </Badge>
@@ -31,7 +31,7 @@ const Card = ({
           </h5>
           <p className='card-text'>{getAge(dateOfBirth)}</p>
           <span className='block-about card-text'>{about}</span>
-          <div className='d-flex justify-content-between align-items-center'>
+          <div className='d-flex justify-content-between align-items-center pb-3'>
             <div className='btn-group'>
               <Link to={`/member/${_id}`}>
                 <Button cls={'btn btn-sm btn-outline-secondary'}>View</Button>
