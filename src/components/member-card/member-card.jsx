@@ -22,7 +22,7 @@ const MemberCard = ({ memberId, onFavorite }) => {
 
   return (
     <div className='card mb-3 shadow p-3 page-wrapper'>
-      <div className='row g-0 p-3'>
+      <div className='row g-0 p-3 justify-content-end'>
         <div className='col-md-6'>
           <picture class='member-item-img '>
             <img
@@ -33,7 +33,7 @@ const MemberCard = ({ memberId, onFavorite }) => {
             />
           </picture>
         </div>
-        <div className='col-md-6 ps-4'>
+        <div className='col-md-6 ps-4 pb-4'>
           <div className='card-body lead text-muted'>
             <Badge color={badge.color} textColor={badge.textColor}>
               {badge.name}
@@ -69,14 +69,16 @@ const MemberCard = ({ memberId, onFavorite }) => {
                 />
               ))}
             </div>
-            <Button
-              onClick={() => onFavorite(_id)}
-              cls={`btn btn-outline-${storage[_id] ? 'danger' : 'secondary'}`}
-            >
-              {storage[_id] ? 'Remove' : 'Add to Favorites'}
-            </Button>
           </div>
         </div>
+        <Button
+          onClick={() => onFavorite(_id)}
+          cls={`btn btn-outline-${
+            storage[_id] ? 'danger' : 'secondary'
+          } btn-member-card`}
+        >
+          {storage[_id] ? 'Remove' : 'Add to Favorites'}
+        </Button>
       </div>
     </div>
   )
