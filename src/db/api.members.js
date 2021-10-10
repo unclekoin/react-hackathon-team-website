@@ -13,7 +13,7 @@ const members = [
     dateOfBirth: "1966-01-08",
     photo: pavel,
     about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum id totam rem facere nam, voluptate excepturi eaque perferendis vel necessitatibus.",
+      "I worked in sales for almost 30 years, but became interested in e-commerce and unexpectedly began to master JavaScript. This activity fascinated me to such an extent that I gave up everything and decided to become a good web developer.",
     technologies: {
       html: { name: "HTML", lavel: "80" },
       css: { name: "CSS", lavel: "75" },
@@ -33,7 +33,7 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project",
-      componets: ["Favourites"],
+      componets: ["Project structure", "Routing", "Favourites Page", "Card"],
     },
     badge: { name: "quick eye", color: "danger", textColor: false },
   },
@@ -59,7 +59,7 @@ const members = [
       telegram: "https://t.me/Valera5454",
       instagram: "https://www.instagram.com/",
     },
-    role: { text: "Here's what I did on the project", componets: ["Navbar"] },
+    role: { text: "Here's what I did on the project", componets: ["Navbar", "Page 404"] },
     badge: { name: "sad sorcerer", color: "secondary", textColor: false },
   },
   {
@@ -114,7 +114,7 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project",
-      componets: ["Progress", "About Page"],
+      componets: ["Progress", "About Page", "Contacts Page"],
     },
     badge: { name: "agile badger", color: "success", textColor: false },
   },
@@ -142,7 +142,7 @@ const members = [
     },
     role: {
       text: "Here's what I did on the project",
-      componets: ["Slider", "Footer"],
+      componets: ["Slider", "Footer", "Header", "Styles"],
     },
     badge: { name: "egolege", color: "info", textColor: false },
   },
