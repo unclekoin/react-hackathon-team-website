@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-hackathon-team-website/static/css/main.6c341327.chunk.css",
-    "main.js": "/react-hackathon-team-website/static/js/main.1e96c5d5.chunk.js",
-    "main.js.map": "/react-hackathon-team-website/static/js/main.1e96c5d5.chunk.js.map",
+    "main.js": "/react-hackathon-team-website/static/js/main.07fd764a.chunk.js",
+    "main.js.map": "/react-hackathon-team-website/static/js/main.07fd764a.chunk.js.map",
     "runtime-main.js": "/react-hackathon-team-website/static/js/runtime-main.c84028b6.js",
     "runtime-main.js.map": "/react-hackathon-team-website/static/js/runtime-main.c84028b6.js.map",
     "static/css/2.ac9b3f7d.chunk.css": "/react-hackathon-team-website/static/css/2.ac9b3f7d.chunk.css",
@@ -45,6 +45,6 @@
     "static/css/2.ac9b3f7d.chunk.css",
     "static/js/2.83c68ead.chunk.js",
     "static/css/main.6c341327.chunk.css",
-    "static/js/main.1e96c5d5.chunk.js"
+    "static/js/main.07fd764a.chunk.js"
   ]
 }
