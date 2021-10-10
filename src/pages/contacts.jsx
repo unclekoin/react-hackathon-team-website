@@ -50,15 +50,15 @@ const Contacts = () => {
           <p className="lead text-center">We are always open to communication</p>
           <div className="d-flex flex-column my-3 flex-grow-1">
             <div className="row row-cols-4  text-center my-auto justify-content-center">
-              {media.map(i => <Media item={i}/>)}
+              {media.map(i => <Media key={i.title} item={i}/>)}
             </div>
           </div>
           <p className="lead text-center fs-3">Let's do something together!</p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Contacts
 
@@ -67,16 +67,17 @@ const Media = ({item}) => {
   const [position, setPosition] = useState({top: '45px', left: '45px'})
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       const newTop = Math.floor(Math.random() * 90) + 'px'
       const newLeft = Math.floor(Math.random() * 90) + 'px'
       setPosition({top: newTop, left: newLeft})
     }, 500 + Math.floor(Math.random() * 1500))
+    return () => clearTimeout(timeoutId)
   }, [position])
 
   return (
     <div className={styles.wrapper}>
-      <div  className={styles.svg} style={{top: position.top, left: position.left}}>
+      <div className={styles.svg} style={{top: position.top, left: position.left}}>
         <a href={item.link}>
           <img alt="img" src={item.img} style={{height: '30px'}} title={item.title}/>
         </a>

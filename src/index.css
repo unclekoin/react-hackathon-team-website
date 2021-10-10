@@ -133,13 +133,7 @@ a.breadcrumb-item {
   text-decoration: none;
 }
 
-.breadcrumb-item:hover {
-  /* color: white !important;
-  background-color: #20232a;
-  text-decoration: none; */
-}
-
 /* member */
-.member-wrapper {
+.page-wrapper {
   height: calc(100vh - 364px);
 }

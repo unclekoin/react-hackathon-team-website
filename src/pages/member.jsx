@@ -7,7 +7,7 @@ const Member = () => {
   console.log(memberId)
   
   return (
-    <div className='container member-wrapper'>
+    <div className='container page-wrapper'>
       <h1>Member</h1>
     </div>
   );
