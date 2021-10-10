@@ -36,7 +36,9 @@ const App = () => {
         </Route>
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
-        <Route path="/member/:memberId" component={Member} />
+        <Route path="/member/:memberId">
+          <Member onFavorite={handleFavorite}/>
+        </Route>
         <Route path="/404" component={PageNotFound} />
         <Redirect to="/404" />
       </Switch>
