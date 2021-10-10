@@ -135,5 +135,5 @@ a.breadcrumb-item {
 
 /* member */
 .page-wrapper {
-  height: calc(100vh - 364px);
+  min-height: calc(100vh - 364px);
 }
