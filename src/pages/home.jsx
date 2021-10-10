@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 import members from "../db/api.members";
 import Card from "../components/card/card";
-import Progress from "../components/progress/progress";
 import Slider from "../components/slider/slider";
 
 const Home = ({ onFavorite }) => {
@@ -66,7 +65,6 @@ const Home = ({ onFavorite }) => {
           </div>
         </section>
       </main>
-      <Progress />
     </>
   );
 };
