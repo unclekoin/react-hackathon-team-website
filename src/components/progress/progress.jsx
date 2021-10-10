@@ -4,7 +4,10 @@ import classes from './progress.module.css'
 
 const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'circle'}) => {
   const [barStyle, setBarStyle] = useState({width: '0%'})
-  const [circleStyle, setCircleStyle] = useState({strokeDashoffset: 439})
+  const [circleStyle, setCircleStyle] = useState({strokeDashoffset: 282})
+
+  const length = 110  // don't forget to update strokeDashoffset
+  const innerLength = 70
 
   useEffect(() => {
     switch (type) {
@@ -53,7 +56,8 @@ const Progress = ({value = '65', title = 'HTML', color = 'cadetblue', type = 'ci
             </div>
           </div>
           <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <circle className={classes.circle} style={circleStyle} cx="80" cy="80" r="70"/>
+            <circle className={classes.circle} style={circleStyle}
+                    cx={length/2} cy={length/2} r={(length+innerLength)/4}/>
           </svg>
         </div>
         <p className="mb-0">{title}</p>
