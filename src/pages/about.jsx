@@ -8,12 +8,7 @@ const About = () => {
     <div className='container px-4 py-5 mt-5 col-xxl-8 page-wrapper'>
       <div className='p-3 shadow row flex-lg-row-reverse align-items-center g-5'>
         <div className='my-0 col-12 col-lg-6 my-md-5'>
-          <img
-            src={img}
-            className='mx-auto d-block img-fluid'
-            alt='Hurricane team'
-            loading='lazy'
-          />
+          <img src={img} className='img-fluid shadow' alt='Hurricane team' loading='lazy'/>
         </div>
         <div className='block-info col-lg-6 my-md-5'>
           <h1 className='mb-3 text-center display-5 fw-bold lh-1'>
