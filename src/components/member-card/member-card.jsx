@@ -10,7 +10,7 @@ const MemberCard = ({ memberId }) => {
         <>
             {member && (
                 <div>
-                    <img src={member.photo} alt="no photo" />
+                    <img src={member.photo} alt="" />
                     <h1>{`${member.firstName} ${member.lastName}`}</h1>
                     <h2>{`ege: ${
                         new Date().getFullYear() -
@@ -19,19 +19,21 @@ const MemberCard = ({ memberId }) => {
                     <h2>about:</h2>
                     <h3>{member.about}</h3>
                     <h2>hard skills:</h2>
-                    <h3>
-                        {Object.keys(member.technologies).map((item) => {
-                            return `${member.technologies[item].name}: ${member.technologies[item].lavel}, `;
-                        })}
-                    </h3>
+
+                    {Object.keys(member.technologies).map((item, i) => (
+                        <h3
+                            key={i}
+                        >{`${member.technologies[item].name}: ${member.technologies[item].lavel}, `}</h3>
+                    ))}
+
                     <h2>soft skills:</h2>
-                    <h3>
-                        {Object.entries(member.socialLinks).map((item) => {
-                            return `${item[0]}: ${item[1]}, `;
-                        })}
-                    </h3>
-                    <h2>did do in this project:</h2>
-                    <h3>{member.role}</h3>
+                    {Object.entries(member.socialLinks).map((item, i) => (
+                        <h3 key={i}>{`${item[0]}: ${item[1]}, `}</h3>
+                    ))}
+                    <h2>{member.role.text}:</h2>
+                    {member.role.componets.map((component, i) => (
+                        <h3 key={i}>{component},</h3>
+                    ))}
                 </div>
             )}
         </>
