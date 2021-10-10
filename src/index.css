@@ -160,3 +160,22 @@ a.breadcrumb-item {
 .btn-member-card {
   width: 145px;
 }
+
+.page-wrapper-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  min-height: calc(100vh - 319px);
+  background-color: #12a4c9;
+}
+
+.block-to-home {
+  color: black;
+}
+
+.block-to-home a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
