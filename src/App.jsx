@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      {location.pathname !== '/' ? <Breadcrumbs /> : null}
+      {(location.pathname !== '/' && location.pathname !== '/404') ? <Breadcrumbs /> : null}
       <Switch>
         <Route path="/" exact>
           <Home onFavorite={handleFavorite} />
