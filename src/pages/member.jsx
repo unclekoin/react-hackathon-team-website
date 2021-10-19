@@ -3,7 +3,7 @@ import { useParams, Redirect } from 'react-router-dom';
 import members from '../db/api.members';
 import MemberCard from '../components/member-card/member-card';
 
-const Member = ({ onFavorite }) => {
+const Member = () => {
   const params = useParams();
   const { memberId } = params;
   const isMember = members.find((member) => member._id === memberId);
@@ -11,7 +11,7 @@ const Member = ({ onFavorite }) => {
   return (
     <div className="container member-wrapper">
       {isMember ? (
-        <MemberCard memberId={memberId} onFavorite={onFavorite} />
+        <MemberCard memberId={memberId} />
       ) : (
         <Redirect to="/404" />
       )}

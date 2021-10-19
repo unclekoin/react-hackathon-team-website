@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import members from '../../db/api.members';
-import storage from '../../db/storage';
+import { handleFavorite, isFavorite } from '../../db/storage';
 import PropTypes from 'prop-types';
 import Button from '../button/button';
 import Badge from '../badge/badge';
 import Progress from '../progress/progress';
 
-const MemberCard = ({ memberId, onFavorite }) => {
+const MemberCard = ({ memberId }) => {
+  const [favorite, setFavorite] = useState();
+
+  useEffect(() => {
+    setFavorite(isFavorite(memberId));
+  }, [memberId]);
+
+  const toggleFavorite = () => {
+    handleFavorite(memberId);
+    setFavorite(isFavorite(memberId));
+  }
+
   const [member] = useState(members.find((item) => item._id === memberId));
   const {
-    _id,
     firstName,
     lastName,
     photo,
@@ -19,6 +29,7 @@ const MemberCard = ({ memberId, onFavorite }) => {
     badge,
     technologies,
   } = member;
+  
   return (
     <div className="card mb-3 shadow p-3 page-wrapper">
       <div className="row g-0 p-3 justify-content-end">
@@ -71,12 +82,12 @@ const MemberCard = ({ memberId, onFavorite }) => {
           </div>
         </div>
         <Button
-          onClick={() => onFavorite(_id)}
+          onClick={() => toggleFavorite()}
           cls={`btn btn-outline-${
-            storage[_id] ? 'danger' : 'secondary'
+            favorite ? 'danger' : 'secondary'
           } btn-member-card`}
         >
-          {storage[_id] ? 'Remove' : 'Add to Favorites'}
+          {favorite ? 'Remove' : 'Add to Favorites'}
         </Button>
       </div>
     </div>
@@ -85,7 +96,6 @@ const MemberCard = ({ memberId, onFavorite }) => {
 
 MemberCard.propTypes = {
   memberId: PropTypes.string.isRequired,
-  onFavorite: PropTypes.func.isRequired,
 };
 
 export default MemberCard;

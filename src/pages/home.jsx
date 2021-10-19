@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import members from '../db/api.members';
 import Card from '../components/card/card';
 import Slider from '../components/slider/slider';
 
-const Home = ({ onFavorite }) => {
+const Home = () => {
   return (
     <>
       <Slider />
@@ -18,7 +17,7 @@ const Home = ({ onFavorite }) => {
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {members.map((member) => (
-                <Card key={member._id} {...member} onFavorite={onFavorite} />
+                <Card key={member._id} {...member} />
               ))}
             </div>
           </div>
@@ -67,10 +66,6 @@ const Home = ({ onFavorite }) => {
       </main>
     </>
   );
-};
-
-Home.propTypes = {
-  onFavorite: PropTypes.func.isRequired,
 };
 
 export default Home;

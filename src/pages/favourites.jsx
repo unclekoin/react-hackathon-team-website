@@ -1,11 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState,useEffect } from 'react';
+import { getFavoriteMembers } from '../db/storage';
 import Card from '../components/card/card';
-import storage from '../db/storage';
 import members from '../db/api.members';
 
-const Favourites = ({ onFavorite }) => {
-  const favourites = members.filter((member) => storage[member._id]);
+const Favourites = () => {
+  const [favourites, setFavourites] = useState([]);
+
+  useEffect(() => {
+    setFavourites(() => getFavoriteMembers(members));
+  }, []);
+
+  const updateFavourites = () => {
+    setFavourites(() => getFavoriteMembers(members));
+  }
 
   return (
     <main className="page-wrapper">
@@ -21,11 +28,7 @@ const Favourites = ({ onFavorite }) => {
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {favourites.map((favorite) => (
-                <Card
-                  key={favorite._id}
-                  {...favorite}
-                  onFavorite={onFavorite}
-                />
+                <Card key={favorite._id} {...favorite} method={updateFavourites} />
               ))}
             </div>
           </div>
@@ -33,10 +36,6 @@ const Favourites = ({ onFavorite }) => {
       )}
     </main>
   );
-};
-
-Favourites.propTypes = {
-  onFavorite: PropTypes.func.isRequired,
 };
 
 export default Favourites;

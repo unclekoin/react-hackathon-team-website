@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { handleFavorite, isFavorite } from '../../db/storage';
 import Button from '../button/button';
 import Badge from '../badge/badge';
-import storage from '../../db/storage';
 import getAge from '../../utils/get-age';
 
 const Card = ({
@@ -14,8 +14,20 @@ const Card = ({
   badge,
   photo,
   about,
-  onFavorite,
+  method,
 }) => {
+  const [favorite, setFavorite] = useState();
+
+  useEffect(() => {
+    setFavorite(isFavorite(_id));
+  }, [_id]);
+
+  const toggleFavorite = () => {
+    handleFavorite(_id);
+    setFavorite(isFavorite(_id));
+    if (method) method();
+  };
+
   return (
     <div className="col">
       <div className="shadow-sm card">
@@ -38,11 +50,11 @@ const Card = ({
               </Link>
               <Button
                 cls={`btn btn-sm btn-outline-${
-                  storage[_id] ? 'danger' : 'secondary'
+                  favorite ? 'danger' : 'secondary'
                 }`}
-                onClick={() => onFavorite(_id)}
+                onClick={() => toggleFavorite()}
               >
-                {storage[_id] ? 'Delete' : 'Add'}
+                {favorite ? 'Delete' : 'Add'}
               </Button>
             </div>
           </div>
@@ -59,7 +71,7 @@ Card.propTypes = {
   dateOfBirth: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired,
   about: PropTypes.string.isRequired,
-  onFavorite: PropTypes.func.isRequired,
+  method: PropTypes.func,
 };
 
 export default Card;
