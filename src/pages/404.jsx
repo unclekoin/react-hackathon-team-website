@@ -1,6 +1,6 @@
 import React from 'react';
 import notFoundPict from '../assets/images/404_notfound.png';
-import MenuItem from '../components/navbar/MenuItem';
+import MenuItem from '../components/navbar/menuItem';
 
 const PageNotFound = () => {
   return (

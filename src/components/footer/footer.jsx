@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FooterColumn from './FooterColumn';
+import FooterColumn from './footer-column';
 import Logo from '../../assets/svg/logo';
 
 const Footer = () => {

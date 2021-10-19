@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterColumn from '../footer/FooterColumn';
+import FooterColumn from '../footer/footer-column';
 import { PropTypes } from 'prop-types';
 
 const NavBarTop = ({ collapse }) => {

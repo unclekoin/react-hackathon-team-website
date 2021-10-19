@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import NavBarTop from './NavBarTop';
-import NavBarBottom from './NavBarBottom';
+import NavBarTop from './navbar-top';
+import NavBarBottom from './navbar-bottom';
 
 const Navbar = () => {
   const [collapse, setCollapse] = useState(true);
